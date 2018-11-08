@@ -142,7 +142,7 @@ VS Code package to format your JavaScript / TypeScript / CSS using Prettier.
 
 ![](./img-vs_code/13.png?raw=true)
 
-Comment: I would say this is a must have extension, it save your trouble styling your code, work with eslint. It is also available in npm to install as developer dependency.
+Comment: I would say this is a **must have** extension, it save your trouble styling your code, work with eslint. It is also available in npm to install as developer dependency.
 
 Recommened setting:  
 "prettier.eslintIntegration": true,  
