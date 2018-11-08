@@ -6,7 +6,7 @@ _formulahendry.auto-close-tag_
 
 Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text does.
 
-![Alt text](./vs code img/1.gif?raw=true 'Title')
+![Alt text](./img-vs_code/1.gif?raw=true 'Title')
 
 Comment: Annoying at first, but convenience if you get used to it
 
