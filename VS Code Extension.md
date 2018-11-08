@@ -173,3 +173,13 @@ Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspa
 ![](./img-vs_code/15.png?raw=true)
 
 Comment: Save your extensions and save you from headache trying to reinstall them in new machine.
+
+# 16. CircleCI
+
+_jvandyke.vscode-circleci_
+
+CircleCI commands and status
+
+![](./img-vs_code/16.jpg?raw=true)
+
+Comment: Access the status of your push without visiting github or circle ci dashboard.
