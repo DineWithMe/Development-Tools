@@ -144,12 +144,12 @@ VS Code package to format your JavaScript / TypeScript / CSS using Prettier.
 
 Comment: I would say this is a must have extension, it save your trouble styling your code, work with eslint. It is also available in npm to install as developer dependency.
 
-Recommened setting:
-"prettier.eslintIntegration": true,
-"editor.tabSize": 2,
-"editor.formatOnSave": true,
-"editor.formatOnSaveTimeout": 5000,
-"prettier.singleQuote": true,
+Recommened setting:  
+"prettier.eslintIntegration": true,  
+"editor.tabSize": 2,  
+"editor.formatOnSave": true,  
+"editor.formatOnSaveTimeout": 5000,  
+"prettier.singleQuote": true,  
 "javascript.preferences.quoteStyle": "single"
 
 # 14. React Pure To Class
