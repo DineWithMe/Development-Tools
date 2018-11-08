@@ -6,7 +6,7 @@ _formulahendry.auto-close-tag_
 
 Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text does.
 
-![Alt text](./img-vs_code/1.gif?raw=true 'Title')
+!(./img-vs_code/1.gif?raw=true 'Title')
 
 Comment: Annoying at first, but convenience if you get used to it
 
@@ -16,7 +16,7 @@ _steoates.autoimport_
 
 Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.
 
-Comment: Give you some idea how big your import is
+Comment: Give you some idea how big your import is, another similar extension by Martin Oppitz is kind of broken
 
 ## 3. Auto Rename Tag
 
