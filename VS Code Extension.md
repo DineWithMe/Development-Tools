@@ -1,5 +1,7 @@
 # VS Code Extension
 
+Most extension here were compared to alternatives in term of functionality, popularity and ease of use, I choose what I believe is the best, you are free to have your own option.
+
 ## 1. Auto Close Tag
 
 _formulahendry.auto-close-tag_
