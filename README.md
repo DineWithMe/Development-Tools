@@ -1,12 +1,12 @@
 # Development-Tools
 
-Let me know if you want to maintenance this repository.
+Let me know if you want to update this repository.
 
 No need to create branch for this repository, it serves as quick info, everyone can push it to master branch.
 
 I recommend you commit this repository in your editor, it saves you from typing "br" tag.
 
-This repository is not intended to be learning material, this repository list down the tools/libraries/frameworks used in this project and justification behind the decision.
+This repository is not intended to be learning material (but you are welcomed to add it), this repository list down the tools/libraries/frameworks used in this project and justification behind the decision.
 
 Google If you need more details.
 
@@ -22,7 +22,7 @@ Well it is not like I dont care about better technology, we will adopt better te
 
 Recommendation on visual studio code extensions also available. Having a good editor is like having a good weapon, I strongly suggest you polish your weapon to ease your development process and enhance your development experience.
 
-Unlike library, editor choice is very personal, use what best fit you.
+Unlike library, editor choice is very personal, use what fit you best.
 
 ## Code Maintenance
 
