@@ -20,6 +20,8 @@ Well it is not like I dont care about better technology, we will adopt better te
 
 Recommendation on visual studio code extensions also available. Having a good editor is like having a good weapon, I strongly suggest you polish your weapon to ease your development process and enhance your development experience.
 
+Unlike library, editor choice is very personal, use what best fit you.
+
 ## Code Maintenance
 
 We will also touch on coding philosophy and practice.
