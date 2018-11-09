@@ -6,7 +6,7 @@ Here is simple justification of important library that we are going to use.
 
 ## 1. React
 
-![](./img/1.jpeg?raw=true)
+![](./img/1.jpeg)
 
 We use react to build user interface. Personally I like the idea of component, it changes the philosophy of separation of concern. It increase the learning curve as it requires a programmer to have all kinds of knowledge.
 
@@ -25,7 +25,7 @@ If I would pick up another library, I think Vue is a good choice.
 
 ## 2. Next
 
-![](./img/2.png?raw=true)
+![](./img/2.png)
 
 There are actually not much React frameworks out there when come to SSR, presumably Next, Gatsby and After.
 
@@ -47,7 +47,7 @@ Other than Next, Gatsby is extremely attractive option is you want to host stati
 
 # 3. Redux
 
-![](./img/3.png?)
+![](./img/3.png)
 
 There are a lot of state management library out there, but I dont have much experience to comment on them.
 
