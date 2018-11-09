@@ -10,7 +10,7 @@ Although it consume much higher memory resource, but since modern computer norma
 
 With open source comes great community, with great community comes great extensions, most extensions listed were compared to alternatives in term of functionality, popularity and ease of use.
 
-I choose what I believe is the best, you are free to have your own options, you should be able to find similar extension in your favourite editor.
+I choose what I believe is the best, you are free to have your own options, you should be able to find similar extension in your favorite editor.
 
 ## 1. Auto Close Tag
 
@@ -62,7 +62,7 @@ This extension allows matching brackets to be identified with colours. The user 
 
 ![](./img/5.png?raw=true)
 
-Comment: Can be confusing but it is better than wihtout it.
+Comment: Can be confusing but it is better than without it.
 
 ## 6. Docker
 
@@ -82,7 +82,7 @@ A port of DotENV for vscode.
 
 ![](./img/7.png?raw=true)
 
-Comment: Simple and useful syntax highligter.
+Comment: Simple and useful syntax highlighter.
 
 ## 8. ES7 React/Redux/GraphQL/React-Native snippets
 
@@ -130,21 +130,17 @@ This extension colorizes the indentation in front of your text alternating four 
 
 Comment: Not impactful but still nice to have. Very useful if you work with indent sensitive file.
 
-## 12. npm Intellisense
+## 12. Code Spell Checker
 
-_christian-kohler.npm-intellisense_
+_streetsidesoftware.code-spell-checker_
 
-Visual Studio Code plugin that autocompletes npm modules in import statements.
+A basic spell checker that works well with camelCase code.
 
 ![](./img/12.1.gif?raw=true)
 
 ![](./img/12.2.gif?raw=true)
 
-![](./img/12.3.gif?raw=true)
-
-![](./img/12.4.gif?raw=true)
-
-Comment: Less mistake when importing library.
+Comment: Comes with GUI, easy to use, would be better if it uses red color for linter.
 
 # 13. Prettier - Code formatter
 
@@ -156,7 +152,7 @@ VS Code package to format your JavaScript / TypeScript / CSS using Prettier.
 
 Comment: I would say this is a **must have** extension, it save your trouble styling your code, work with eslint. It is also available in npm to install as developer dependency.
 
-Recommened setting:  
+Recommended setting:  
 "prettier.eslintIntegration": true,  
 "editor.tabSize": 2,  
 "editor.formatOnSave": true,  
@@ -178,7 +174,7 @@ Comment: Change component to React component with ease.
 
 _shan.code-settings-sync_
 
-Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspaces and Extensions Across Multiple Machines Using GitHub Gist.
+Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspace and Extensions Across Multiple Machines Using GitHub Gist.
 
 ![](./img/15.png?raw=true)
 
@@ -193,3 +189,13 @@ CircleCI commands and status
 ![](./img/16.jpg?raw=true)
 
 Comment: Access the status of your push without visiting github or circle ci dashboard.
+
+# 17. :emojisense:
+
+_bierner.emojisense_
+
+Adds suggestions and autocomplete for emoji to VS Code.
+
+![](./img/17.gif?raw=true)
+
+Comment: The rest of emoji extensions is not intuitive as this one.
