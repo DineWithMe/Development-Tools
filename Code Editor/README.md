@@ -199,3 +199,13 @@ Adds suggestions and autocomplete for emoji to VS Code.
 ![](./img/17.gif)
 
 Comment: The rest of emoji extensions is not intuitive as this one.
+
+# 18. Open Folder Context Menus for VS Code
+
+_chrisdias.vscode-opennewinstance_
+
+Quickly open a new instance of VS Code from the Explorer
+
+![](./img/18.png)
+
+Comment: Convenience small tool.
