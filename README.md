@@ -4,7 +4,7 @@ Let me know if you want to maintenace this repo.
 
 No need to create branch for this repo, it serves as knowledge base, eveyone can push to master branch.
 
-I recommend you commit this repo in your editor, it saves you from typing "</br>" tag.
+I recommend you commit this repo in your editor, it saves you from typing "br" tag.
 
 ## Library
 
