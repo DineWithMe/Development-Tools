@@ -2,8 +2,7 @@
 
 This repo list down the tools/libraries/frameworks used in this project and justification behind the decision.
 
-When come to choosing the tools/libraries/frameworks, because there is massive amount of options available,
-to avoid all sort of complexity, so I adopt a simple and safe mindset when come in decision making.
+When come to choosing the tools/libraries/frameworks, there is massive amount of options available. To avoid all sort of complexity, I adopt a simple and safe mindset when come in decision making.
 
 Basically we use reputed and popular tools, because I believe they are more stable, more resourceful and higher chance of answering our technical problem.
 

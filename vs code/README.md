@@ -1,6 +1,16 @@
-# VS Code Extension
+# VS Code Extensions
 
-Most extensions were compared to alternatives in term of functionality, popularity and ease of use. I choose what I believe is the best, you are free to have your own option, you should be able to find similar extension in your favourite editor.
+Why VS Code?
+
+VS Code is great, it comes with rich functionalities, it has source control, allows you to add, commit, and push in click. Not to mention the built in terminal which is pretty handy.
+
+It is free and open source, another huge plus. It is highly polished, it brings great user experience and it is getting better and better.
+
+Although it consume much higher memory resource, but since modern computer normally has 8GB ram or above, it is more than enough to handle it.
+
+With open source comes great community, with great community comes great extensions, most extensions listed were compared to alternatives in term of functionality, popularity and ease of use.
+
+I choose what I believe is the best, you are free to have your own options, you should be able to find similar extension in your favourite editor.
 
 ## 1. Auto Close Tag
 
