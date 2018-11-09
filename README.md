@@ -2,13 +2,15 @@
 
 Let me know if you want to maintenance this repository.
 
-No need to create branch for this repository, it serves as knowledge base, everyone can push to master branch.
+No need to create branch for this repository, it serves as quick info, everyone can push it to master branch.
 
 I recommend you commit this repository in your editor, it saves you from typing "br" tag.
 
-## Library
+This repository is not intended to be learning material, this repository list down the tools/libraries/frameworks used in this project and justification behind the decision.
 
-This repository list down the tools/libraries/frameworks used in this project and justification behind the decision.
+Google If you need more details.
+
+## Library
 
 When come to choosing the tools/libraries/frameworks, there is massive amount of options available. To avoid all sort of complexity, I adopt a simple and safe mindset when come in decision making.
 

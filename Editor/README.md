@@ -140,7 +140,7 @@ A basic spell checker that works well with camelCase code.
 
 ![](./img/12.2.gif?raw=true)
 
-Comment: Comes with GUI, easy to use, would be better if it uses red color for linter.
+Comment: Comes with GUI, easy to use, would be better if it uses red color for linter. It doesn't check on grammar though.
 
 # 13. Prettier - Code formatter
 
