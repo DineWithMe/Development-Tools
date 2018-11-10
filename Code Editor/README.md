@@ -1,10 +1,10 @@
 # VS Code Extensions
 
-Why VS Code?
+Why the free, open source, rich functionalities VS Code?
 
-VS Code is great, it comes with rich functionalities, it has source control, allows you to add, commit, and push in click. Not to mention the built in terminal which is pretty handy.
+It has source control integrated, allows you to add, commit, and push in few clicks. Not to mention the built in terminal which is pretty handy.
 
-It is free and open source, another huge plus. It is highly polished, it brings great user experience and it is getting better and better.
+VS Code is highly polished, it brings great user experience and is getting better and better with each update. It feels so good just by typing on it.
 
 Although it consume much higher memory resource, but since modern computer normally has 8GB ram or above, it is more than enough to handle it.
 
@@ -208,4 +208,4 @@ Quickly open a new instance of VS Code from the Explorer
 
 ![](./img/18.png)
 
-Comment: Convenience small tool.
+Comment: Handy small tool.

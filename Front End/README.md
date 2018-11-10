@@ -37,7 +37,7 @@ Since the option available is small, question shifted why we use x framework to 
 
 It comes with a lot pros (and cons), but the obvious pro is search engine optimization. In the world of internet, we all at the mercy of Google (joke, Google actually want related site to be discover).
 
-To improve your Google search ranking, you need to tell Google know what you are and the way to do so is to let Google crawl your page and understand your content as much as possible.
+To improve your Google search ranking, you need to tell Google what your site are and the way to do so is to let Google crawl your page and understand your content as much as possible.
 
 But when you send a React page, you are actually sending skeleton html page with no content for Google to crawl, the content only available after client finish render it. Which is why server side rendering is very important.
 
