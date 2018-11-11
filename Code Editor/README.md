@@ -211,3 +211,39 @@ Quickly open a new instance of VS Code from the Explorer
 ![](./img/18.png)
 
 Comment: Handy small tool.
+
+# 19. Code Runner
+
+_formulahendry.code-runner_
+
+Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, and custom command
+
+![](./img/19.1.gif)
+
+![](./img/19.2.gif)
+
+Comment: No need to run the whole script just to test a piece of small code.
+
+# 20. Relative Path
+
+_jakob101.relativepath_
+
+Get relative url paths from files in the current workspace.
+
+![](./img/20.gif)
+
+Comment: No more frustration when typing file path.
+
+# 21. npm Intellisense
+
+_christian-kohler.npm-intellisense_
+
+Visual Studio Code plugin that autocompletes npm modules in import statements.
+
+![](./img/21.1.gif)
+
+![](./img/21.2.gif)
+
+![](./img/21.3.gif)
+
+Comment: Good for importing npm module.
