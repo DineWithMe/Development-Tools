@@ -158,7 +158,9 @@ Recommended setting:
 "editor.formatOnSave": true,  
 "editor.formatOnSaveTimeout": 5000,  
 "prettier.singleQuote": true,  
-"javascript.preferences.quoteStyle": "single"
+"javascript.preferences.quoteStyle": "single",
+"prettier.jsxSingleQuote": true,
+"prettier.trailingComma": "es5"
 
 # 14. React Pure To Class
 
