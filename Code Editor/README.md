@@ -160,7 +160,8 @@ Recommended setting:
 "prettier.singleQuote": true,  
 "javascript.preferences.quoteStyle": "single",
 "prettier.jsxSingleQuote": true,
-"prettier.trailingComma": "es5"
+"prettier.trailingComma": "es5",
+"prettier.semi": false
 
 # 14. React Pure To Class
 
@@ -247,3 +248,17 @@ Visual Studio Code plugin that autocompletes npm modules in import statements.
 ![](./img/21.3.gif)
 
 Comment: Good for importing npm module.
+
+# 22. GraphQL for VSCode
+
+_kumar-harsh.graphql-for-vscode_
+
+VSCode extension for GraphQL schema authoring & consumption.
+
+![](./img/21.1.gif)
+
+![](./img/21.2.gif)
+
+![](./img/21.3.gif)
+
+Comment: Syntax highlighting
