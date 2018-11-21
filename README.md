@@ -36,7 +36,7 @@ Authentication Token   | JWT
 Query Language         | GraphQL
 Redis                  | Caching
 
-Generic               | Library
+Generic                | Library
 ---------------------- | -------------
 Test                   | Jest
 Transpiler             | Babel
@@ -47,8 +47,9 @@ Recommendation on visual studio code extensions also available. Having a good ed
 
 Unlike library, editor choice is very personal, use what fit you best.
 
-Editor                 | VSCode
----------------------- | -------------
+Editor                 | 
+---------------------- |
+VSCode                 |
 
 ## DevOps
 
