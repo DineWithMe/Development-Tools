@@ -16,7 +16,7 @@ Basically we use reputed and popular tools, because I believe they are more stab
 
 Well it is not like I dont care about better technology, we will adopt better technology if they are proven to have clear advantages over existing and significant size of community.
 
-Here is overview of what important library we are going to use in this project, of course it may change depend on need
+Here is overview of what important library we are going to use in this project, of course it may change depend on need:
 
 Front End              | Libraries
 ---------------------- | -------------
@@ -55,7 +55,7 @@ VSCode                 |
 
 ## DevOps
 
-We should cultivate devOps culture as soon as possible, from planning, building, testing, deployment, and monitoring, we will come up with suitable tool for every category and try to automate some of the process safely.
+We should cultivate devOps culture as soon as possible, from planning, building, testing, deployment, and monitoring, we will come up with suitable tool for every category and try to automate build, test and deploy of the process safely.
 
 Purpose                | Tools
 ---------------------- | -------------
