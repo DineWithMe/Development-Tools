@@ -79,7 +79,7 @@ So, should we keep unused argument? I have no clear answer for this,
 
 2. **Styling and rule, especially styling, is not as important as people think it is.**
 
-Styling and rule are preferences, and most of the time people think their preference is important, But in reality it is not. Yes a good styling definitely help, but to what extend? how much it improve your workflow? 10%? 5%? 0.5%?
+Styling and rule are preferences, and most of the time people think their preference is important, But in reality it is not. Yes a good styling definitely help, but to what extend? how much it improves your workflow? 10%? 5%? 0.5%? Is it worth your time?
 
 When come to styling/rule, it is not about who has the best styling and code, it is about consistency across the team, we need to make sure everyone use the same style and code so in long term they can understand each other code easier(when they get used to the rule and styling).
 
