@@ -63,7 +63,7 @@ Continuous Integration | CircleCI**
 Container              | Docker
 Serverless             | Zeit Now, Heroku, Prisma
 
-**may switch to Jenkins
+**not yet finalize, may switch to Jenkins but CircleCI seem convenience enough, ultimately it depend on the cost
 
 ## Rule and Styling
 
