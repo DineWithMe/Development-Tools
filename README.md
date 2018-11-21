@@ -24,7 +24,9 @@ UI Rendering           | React
 Web Page Rendering     | Next
 State Management       | Redux
 UI Component Testing   | Enzyme
-Bundler                | Webpack (comes with Next)
+Bundler                | Webpack*
+
+*comes with and pre-configured by Next
 
 Back End               | Library
 ---------------------- | -------------
@@ -55,6 +57,13 @@ VSCode                 |
 
 We should cultivate devOps culture as soon as possible, from planning, building, testing, deployment, and monitoring, we will come up with suitable tool for every category and try to automate some of the process safely.
 
+Purpose                | Tools
+---------------------- | -------------
+Continuous Integration | CircleCI**
+Container              | Docker
+Serverless             | Zeit Now, Heroku, Prisma
+
+**may switch to Jenkins
 
 ## Rule and Styling
 
