@@ -24,24 +24,31 @@ UI Rendering           | React
 Web Page Rendering     | Next
 State Management       | Redux
 UI Component Testing   | Enzyme
-Test                   | Jest
+Bundler                | Webpack (comes with Next)
 
 Back End               | Library
 ---------------------- | -------------
 Server                 | Node
 Server Framework       | Graphql-Yoga
 Database               | Postgres
-Test                   | Jest
 ORM                    | Prisma
 Authentication Token   | JWT
 Query Language         | GraphQL
 Redis                  | Caching
+
+Generic               | Library
+---------------------- | -------------
+Test                   | Jest
+Transpiler             | Babel
 
 ## Editor
 
 Recommendation on visual studio code extensions also available. Having a good editor is like having a good weapon, I strongly suggest you polish your weapon to ease your development process and enhance your development experience.
 
 Unlike library, editor choice is very personal, use what fit you best.
+
+Editor                 | VSCode
+---------------------- | -------------
 
 ## DevOps
 
