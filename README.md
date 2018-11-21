@@ -18,7 +18,7 @@ Well it is not like I dont care about better technology, we will adopt better te
 
 Here is overview of what important library we are going to use in this project, of course it may change depend on need
 
-Front End              | Library
+Front End              | Libraries
 ---------------------- | -------------
 UI Rendering           | React
 Web Page Rendering     | Next
@@ -28,7 +28,7 @@ Bundler                | Webpack*
 
 *comes with and pre-configured by Next
 
-Back End               | Library
+Back End               | Libraries
 ---------------------- | -------------
 Server                 | Node
 Server Framework       | Graphql-Yoga
@@ -38,7 +38,7 @@ Authentication Token   | JWT
 Query Language         | GraphQL
 Redis                  | Caching
 
-Generic                | Library
+Generic                | Libraries
 ---------------------- | -------------
 Test                   | Jest
 Transpiler             | Babel
@@ -63,7 +63,7 @@ Continuous Integration | CircleCI**
 Container              | Docker
 Serverless             | Zeit Now, Heroku, Prisma
 
-**not yet finalize, may switch to Jenkins but CircleCI seem convenience enough, ultimately it depend on the cost
+**not yet finalize, may switch to Jenkins but CircleCI seems convenience enough, ultimately it depends on the cost
 
 ## Rule and Styling
 
@@ -80,7 +80,7 @@ I will not keep the semicolon for 2 reasons:
   * With or without it, it doesn't provide any meaningful explicit information.
 
 So, should we keep unused argument? I have no clear answer for this, 
-  * removing unused argument make the code cleaner .
+  * removing unused argument make the code cleaner.
   * But keeping it explicitly tell the newcomer or remind the old man what this thing can potentially do at the first glance. 
   * However you can always refer to the documentation.
 
@@ -88,15 +88,15 @@ So, should we keep unused argument? I have no clear answer for this,
 
 2. **Styling and rule, especially styling, is not as important as people think it is.**
 
-Styling and rule are preferences, and most of the time people think their preference is important, But in reality it is not. Yes a good styling definitely help, but to what extend? how much it improves your workflow? 10%? 5%? 0.5%? Is it worth your time?
+Styling and rule are preferences, and most of the time people think their preference is important, But in reality it is not. Yes a good styling/rule definitely help, but to what extend? how much it improves your workflow? 10%? 5%? 0.5%? Is it worth your time?
 
 When come to styling/rule, it is not about who has the best styling and code, it is about consistency across the team, we need to make sure everyone use the same style and code so that in long term they can understand each other code easier(when they get used to the rule and styling).
 
-Actually the good styling/rule and consistency are not conflicting each other, because why not both? So an easy solution for this is to install dev-dependency that enforce the good styling/rule. 
+Actually the good styling/rule and consistency are not conflicting each other, because why not both? So an easy solution for this is to install tools that enforce the good styling/rule. 
 
 So just take some time to pick a rule/styling and enforce it, that is all.
 
-Code                   | Library
+Code                   | Tools
 ---------------------- | -------------
 Styling                | Prettier
 Rule                   | Eslint
