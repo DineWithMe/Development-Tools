@@ -2,7 +2,7 @@
 
 Why the free, open source, rich functionalities VS Code?
 
-It has source control integrated, allows you to add, commit, and push in few clicks. Not to mention the built in terminal which is pretty handy.
+It has source control integrated, allows you to add, commit, and push in few clicks. Not to mention the built in terminal, I simply cant live without it.
 
 VS Code is highly polished, it brings great user experience and is getting better and better with each update. It feels so good just by typing on it.
 
