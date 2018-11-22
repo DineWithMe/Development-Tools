@@ -18,30 +18,30 @@ Well it is not like I dont care about better technology, we will adopt better te
 
 Here is overview of what important library we are going to use in this project, of course it may change depend on need:
 
-Front End              | Libraries
----------------------- | -------------
-UI Rendering           | React
-Web Page Rendering     | Next
-State Management       | Redux
-UI Component Testing   | Enzyme
-Bundler                | Webpack*
+| Front End            | Libraries |
+| -------------------- | --------- |
+| UI Rendering         | React     |
+| Web Page Rendering   | Next      |
+| State Management     | Redux     |
+| UI Component Testing | Enzyme    |
+| Bundler              | Webpack\* |
 
-*comes with and pre-configured by Next
+\*comes with and pre-configured by Next, actually I prefer Parcel
 
-Back End               | Libraries
----------------------- | -------------
-Server                 | Node
-Server Framework       | Graphql-Yoga
-Database               | Postgres
-ORM                    | Prisma
-Authentication Token   | JWT
-Query Language         | GraphQL
-Redis                  | Caching
+| Back End             | Libraries    |
+| -------------------- | ------------ |
+| Server               | Node         |
+| Server Framework     | Graphql-Yoga |
+| Database             | Postgres     |
+| ORM                  | Prisma       |
+| Authentication Token | JWT          |
+| Query Language       | GraphQL      |
+| Redis                | Caching      |
 
-Generic                | Libraries
----------------------- | -------------
-Test                   | Jest
-Transpiler             | Babel
+| Generic    | Libraries |
+| ---------- | --------- |
+| Test       | Jest      |
+| Transpiler | Babel     |
 
 ## Editor
 
@@ -49,21 +49,21 @@ Recommendation on visual studio code extensions also available. Having a good ed
 
 Unlike library, editor choice is very personal, use what fit you best.
 
-Editor                 | 
----------------------- |
-VSCode                 |
+| Editor |
+| ------ |
+| VSCode |
 
 ## DevOps
 
 We should cultivate devOps culture as soon as possible, from planning, building, testing, deployment, and monitoring, we will come up with suitable tool for every category and try to automate build, test and deploy of the process safely.
 
-Purpose                | Tools
----------------------- | -------------
-Continuous Integration | CircleCI**
-Container              | Docker
-Serverless             | Zeit Now, Heroku, Prisma
+| Purpose                | Tools                    |
+| ---------------------- | ------------------------ |
+| Continuous Integration | CircleCI\*\*             |
+| Container              | Docker                   |
+| Serverless             | Zeit Now, Heroku, Prisma |
 
-**not yet finalize, may switch to Jenkins but CircleCI seems convenience enough, ultimately it depends on the cost
+\*\*not yet finalize, may switch to Jenkins but CircleCI seems convenience enough, ultimately it depends on the cost
 
 ## Rule and Styling
 
@@ -73,18 +73,20 @@ I have two core philosophies for this:
 
 1. **trying to be explicit and intuitive while keeping the code low.**
 
-For example: 
+For example:
 
 I will not keep the semicolon for 2 reasons:
-  * it is the source of syntax error if we forgot to remove it.
-  * With or without it, it doesn't provide any meaningful explicit information.
 
-So, should we keep unused argument? I have no clear answer for this, 
-  * removing unused argument make the code cleaner.
-  * But keeping it explicitly tell the newcomer or remind the old man what this thing can potentially do at the first glance. 
-  * However you can always refer to the documentation.
+- it is the source of syntax error if we forgot to remove it.
+- With or without it, it doesn't provide any meaningful explicit information.
 
-  Personally I am more incline to remove the unused argument but I am also willing to keep them for the sake of explicitly. 
+So, should we keep unused argument? I have no clear answer for this,
+
+- removing unused argument make the code cleaner.
+- But keeping it explicitly tell the newcomer or remind the old man what this thing can potentially do at the first glance.
+- However you can always refer to the documentation.
+
+Personally I am more incline to remove the unused argument but I am also willing to keep them for the sake of explicitly.
 
 2. **Styling and rule, especially styling, is not as important as people think it is.**
 
@@ -92,11 +94,11 @@ Styling and rule are preferences, and most of the time people think their prefer
 
 When come to styling/rule, it is not about who has the best styling and code, it is about consistency across the team, we need to make sure everyone use the same style and code so that in long term they can understand each other code easier(when they get used to the rule and styling).
 
-Actually the good styling/rule and consistency are not conflicting each other, because why not both? So an easy solution for this is to install tools that enforce the good styling/rule. 
+Actually the good styling/rule and consistency are not conflicting each other, because why not both? So an easy solution for this is to install tools that enforce the good styling/rule.
 
 So just take some time to pick a rule/styling and enforce it, that is all.
 
-Code                   | Tools
----------------------- | -------------
-Styling                | Prettier
-Rule                   | Eslint
+| Code    | Tools    |
+| ------- | -------- |
+| Styling | Prettier |
+| Rule    | Eslint   |
