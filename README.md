@@ -32,13 +32,14 @@ Here is overview of what important library we are going to use in this project, 
 | -------------------- | ------------ |
 | Server               | Node         |
 | Server Framework     | Graphql-Yoga |
-| Database             | Postgres\*\* |
+| Database             | Postgres\*   |
 | ORM                  | Prisma       |
 | Authentication Token | JWT          |
 | Query Language       | GraphQL      |
 | Caching              | Redis        |
+| Reverse Proxy        | Caddy        |
 
-\*\*or Mongodb, need more research
+\*or Mongodb, need more research
 
 | Generic    | Libraries |
 | ---------- | --------- |
@@ -61,11 +62,11 @@ We should cultivate devOps culture as soon as possible, from planning, building,
 
 | Purpose                | Tools                    |
 | ---------------------- | ------------------------ |
-| Continuous Integration | CircleCI\*\*\*           |
+| Continuous Integration | CircleCI\*               |
 | Container              | Docker                   |
 | Serverless             | Zeit Now, Heroku, Prisma |
 
-\*\*\*not yet finalize, may switch to Jenkins but CircleCI seems convenience enough, ultimately it depends on the cost
+\*not yet finalize, may switch to Jenkins but CircleCI seems convenience enough, ultimately it depends on the cost
 
 ## Rule and Styling
 
