@@ -102,7 +102,7 @@ Actually the good styling/rule and consistency are not conflicting each other, b
 
 So just take some time to pick a rule/styling and enforce it, that is all.
 
-| Code    | Tools    |
-| ------- | -------- |
-| Styling | Prettier |
-| Rule    | Eslint   |
+| Code    | Tools    | Website              |
+| ------- | -------- | -------------------- |
+| Styling | Prettier | https://prettier.io/ |
+| Rule    | Eslint   | https://eslint.org/  |
