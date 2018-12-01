@@ -25,6 +25,7 @@ Here is overview of what important library we are going to use in this project, 
 | State Management     | Redux     |
 | UI Component Testing | Enzyme    |
 | Bundler              | Webpack\* |
+| Client               | Apollo    |
 
 \*comes with and pre-configured by Next, actually I prefer Parcel
 
@@ -37,7 +38,7 @@ Here is overview of what important library we are going to use in this project, 
 | Authentication Token | JWT          |
 | Query Language       | GraphQL      |
 | Caching              | Redis        |
-| Reverse Proxy        | Caddy        |
+| Web Server           | Caddy        |
 
 \*or Mongodb, need more research
 
