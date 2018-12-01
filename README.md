@@ -18,34 +18,34 @@ Well it is not like I dont care about better technology, we will adopt better te
 
 Here is overview of what important library we are going to use in this project, of course it may change depend on need:
 
-| Front End            | Libraries |
-| -------------------- | --------- |
-| UI Rendering         | React     |
-| Web Page Rendering   | Next      |
-| State Management     | Redux     |
-| UI Component Testing | Enzyme    |
-| Bundler              | Webpack\* |
-| Client               | Apollo    |
+| Front End            | Libraries | Website                            |
+| -------------------- | --------- | ---------------------------------- |
+| UI Rendering         | React     | https://reactjs.org/               |
+| Web Page Rendering   | Next      | https://nextjs.org/                |
+| State Management     | Apollo    | https://www.apollographql.com      |
+| UI Component Testing | Enzyme    | https://airbnb.io/enzyme/docs/api/ |
+| Bundler              | Webpack\* | https://webpack.js.org/            |
+| Client               | Apollo    | https://www.apollographql.com      |
 
 \*comes with and pre-configured by Next, actually I prefer Parcel
 
-| Back End             | Libraries    |
-| -------------------- | ------------ |
-| Server               | Node         |
-| Server Framework     | Graphql-Yoga |
-| Database             | Postgres\*   |
-| ORM                  | Prisma       |
-| Authentication Token | JWT          |
-| Query Language       | GraphQL      |
-| Caching              | Redis        |
-| Web Server           | Caddy        |
+| Back End             | Libraries    | Website                                |
+| -------------------- | ------------ | -------------------------------------- |
+| Server               | Node         | https://nodejs.org/en/                 |
+| Server Framework     | Graphql-Yoga | https://github.com/prisma/graphql-yoga |
+| Database             | Postgres\*   | https://www.postgresql.org/            |
+| ORM                  | Prisma       | https://www.prisma.io/                 |
+| Authentication Token | JWT          | https://jwt.io/                        |
+| Query Language       | GraphQL      | https://graphql.org/                   |
+| Caching              | Redis        | https://redis.io/                      |
+| Web Server           | Caddy        | https://caddyserver.com/               |
 
 \*or Mongodb, need more research
 
-| Generic    | Libraries |
-| ---------- | --------- |
-| Test       | Jest      |
-| Transpiler | Babel     |
+| Generic    | Libraries | Website             |
+| ---------- | --------- | ------------------- |
+| Test       | Jest      | https://jestjs.io/  |
+| Transpiler | Babel     | https://babeljs.io/ |
 
 ## Editor
 
@@ -53,19 +53,19 @@ Recommendation on visual studio code extensions also available. Having a good ed
 
 Unlike library, editor choice is very personal, use what fit you best.
 
-| Editor |
-| ------ |
-| VSCode |
+| Editor | Website                        |
+| ------ | ------------------------------ |
+| VSCode | https://code.visualstudio.com/ |
 
 ## DevOps
 
 We should cultivate devOps culture as soon as possible, from planning, building, testing, deployment, and monitoring, we will come up with suitable tool for every category and try to automate build, test and deploy of the process safely.
 
-| Purpose                | Tools                    |
-| ---------------------- | ------------------------ |
-| Continuous Integration | CircleCI\*               |
-| Container              | Docker                   |
-| Serverless             | Zeit Now, Heroku, Prisma |
+| Purpose                | Tools                 | Website                 |
+| ---------------------- | --------------------- | ----------------------- |
+| Continuous Integration | CircleCI\*            | https://circleci.com/   |
+| Container              | Docker                | https://www.docker.com/ |
+| Serverless             | Zeit Now, Heroku, AWS |
 
 \*not yet finalize, may switch to Jenkins but CircleCI seems convenience enough, ultimately it depends on the cost
 
