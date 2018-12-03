@@ -68,7 +68,7 @@ We should cultivate devOps culture as soon as possible, from planning, building,
 | Serverless             | Zeit Now, Heroku, AWS, DO\*\* |
 
 \*not yet finalize, may switch to Jenkins but CircleCI seems convenience enough, ultimately it depends on the cost
-\*\*in term of cost i recommend DO(Digital Ocean), it is more flexible but more manual work, require technical knowledge on Ubuntu
+\*\*in term of cost i recommend DO(Digital Ocean), it is more flexible but more manual work, require technical knowledge in Ubuntu
 
 ## Rule and Styling
 
