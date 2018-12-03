@@ -61,13 +61,14 @@ Unlike library, editor choice is very personal, use what fit you best.
 
 We should cultivate devOps culture as soon as possible, from planning, building, testing, deployment, and monitoring, we will come up with suitable tool for every category and try to automate build, test and deploy of the process safely.
 
-| Purpose                | Tools                 | Website                 |
-| ---------------------- | --------------------- | ----------------------- |
-| Continuous Integration | CircleCI\*            | https://circleci.com/   |
-| Container              | Docker                | https://www.docker.com/ |
-| Serverless             | Zeit Now, Heroku, AWS |
+| Purpose                | Tools                         | Website                 |
+| ---------------------- | ----------------------------- | ----------------------- |
+| Continuous Integration | CircleCI\*                    | https://circleci.com/   |
+| Container              | Docker                        | https://www.docker.com/ |
+| Serverless             | Zeit Now, Heroku, AWS, DO\*\* |
 
 \*not yet finalize, may switch to Jenkins but CircleCI seems convenience enough, ultimately it depends on the cost
+\*\*in term of cost i recommend DO(Digital Ocean), it is more flexible but more manual work, require technical knowledge on Ubuntu
 
 ## Rule and Styling
 
