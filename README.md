@@ -1,6 +1,6 @@
 # README
 
-**This repository is far from complete, let me know if you want to update help.**
+**This repository is far from complete, let me know if you want to help update.**
 
 No need to create branch for this repository, it serves as quick info, everyone can push it to master branch.
 
