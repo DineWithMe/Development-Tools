@@ -2,7 +2,7 @@
 
 [Creative Tim](https://www.creative-tim.com/) is premium themes of Material UI [Material UI](https://material-ui.com/) and the tech behind it is [JSS](https://cssinjs.org/?v=v9.8.7), so the core idea is integrate JSS with Next.
 
-This guide will provide you clear step by step on how to integrate, reference:
+This guide will provide you clear step by step on how to integrate, references:
 
 https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/72
 
@@ -297,7 +297,6 @@ In order for Webpack to understand your css and image, install:
 1. @zeit/next-css
 2. @zeit/next-sass
 3. next-images
-4. babel-plugin-css-in-js (unique class name for jss class)
 
 Then create next.config.js in root directory and copy this into it
 
@@ -308,3 +307,9 @@ const withImages = require('next-images')
 
 module.exports = withImages(withSASS(withCSS()))
 ```
+
+## 10. Babel
+
+Install babel-plugin-css-in-js so that the JSS class has unique name on both server and client side.
+
+Not sure why but you dont need to enable the setting in babelrc or package.json, it just works.
