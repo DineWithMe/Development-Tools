@@ -8,7 +8,7 @@ Here is simple justification of important library that we are going to use.
 
 ![](./img/1.jpeg)
 
-We use react to build user interface. Personally I like the idea of component, it changes the philosophy of separation of concern. It increase the learning curve as it requires a programmer to have all kinds of knowledge.
+We use react to build user interface. Personally I like the idea of component, it changes the philosophy of separation of concern. It increase the learning curve as it requires a programmer to have all kinds of knowledge (html+js+css).
 
 However this doesn't necessary increase the workload as others can work on another component without you involved in it. The best thing is, component thinking allows us to reuse the resources easily. I believe this is a correct direction.
 
@@ -21,7 +21,7 @@ Again my answer for this is quite simple: stable and reputed, it is a safe choic
 - Big ecosystem also means, technical problems that you encountered are most likely answered on internet.
 - It developed by big company, it will last longer.
 
-If I would pick up another library, I think Vue is a good choice.
+If I would pick up another library, I think Vue is a good choice and Imba is very interesting tech to keep eye on.
 
 ## 2. Next
 
@@ -35,7 +35,7 @@ In older time, we can only do server side or client side rendering but not both,
 
 In the world of internet, we all at the mercy of Google (joke, Google actually want related site to be discover). To improve your Google search ranking, you need to tell Google what your site are and the way to do so is to let Google crawl your page and understand your content as much as possible.
 
-But when you send a React page, you are actually sending skeleton html page with no content for Google to crawl, the content only available after client finish render it, here is why server side rendering shine. Yes, google is improving client side rendering crawling algorithm but that is still not enough. plus aside from SEO, there are still number of reasons to use Next.
+But when you send a React page, you are actually sending skeleton html page with no content for Google to crawl, the content only available after client finish render it, here is why server side rendering shine. Yes, google is improving client side rendering crawling algorithm but that is still not enough.
 
 Why we need client side rendering? Basically 1 reason: user interactive.
 
