@@ -22,10 +22,10 @@ Here is overview of what important library we are going to use in this project, 
 | -------------------- | --------- | --------------------------------------- |
 | UI Rendering         | React     | https://reactjs.org/                    |
 | Web Page Rendering   | Next      | https://nextjs.org/                     |
+| Client               | Apollo    | https://www.apollographql.com           |
 | State Management     | Unstated  | https://github.com/jamiebuilds/unstated |
 | UI Component Testing | Enzyme    | https://airbnb.io/enzyme/docs/api/      |
 | Bundler              | Webpack\* | https://webpack.js.org/                 |
-| Client               | Apollo    | https://www.apollographql.com           |
 
 \*comes with and pre-configured by Next, actually I prefer Parcel
 
