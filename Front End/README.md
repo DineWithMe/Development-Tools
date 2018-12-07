@@ -25,8 +25,9 @@ If I would pick up another library, I think Vue is a good choice.
 
 ## 2. Next
 
+<p align="center">
 ![](./img/2.png)
-
+<p>
 There are actually not much React frameworks out there when come to server side renderer, presumably Next, Gatsby and After. Why we need server side rendering? Basically 2 reasons: performance and search engine optimization.
 
 Server side rendering effectively reduce round trip make to server, it is much cost effective to serve as much as possible in one round trip, an analogy in real world would be if you want to fetch 20 people but your car can only carry 5 people, you would carry 5 people per trip because that is the most effective way to do so. Thing will get complicated if the payload getting bigger but we wont go deep in this paragraph.
