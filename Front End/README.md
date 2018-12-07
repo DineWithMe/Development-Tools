@@ -45,7 +45,7 @@ If you can change what to be appeared in the browser, it make user interactive r
 
 That is why I choose Next, because Next is actually an universal renderer, it can renders both client side and server side, we can have the best of both. We can have everything ready on the server side and at the same time provide rich interactive user experience on the client side.
 
-Other than Next, Gatsby is extremely attractive option is you want to host static page, it is blazing fast, I strongly recommend it but somehow tricky to render dynamic content with Gatsby(I dont have much research yet); speaking about After, After is fairly new and heavily inspired by Next, the different is After adopt different routing philosophy (which Next will adopt too).
+Other than Next, Gatsby is extremely attractive option is you want to host static page(Next also can do the same), it is blazing fast, I strongly recommend it but somehow tricky to render dynamic content with Gatsby(I dont have much research yet); speaking about After, After is fairly new and heavily inspired by Next, the different is After adopt different routing philosophy (which Next will adopt too).
 
 # 3. Redux
 
