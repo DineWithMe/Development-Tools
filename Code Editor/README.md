@@ -18,7 +18,7 @@ _formulahendry.auto-close-tag_
 
 Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text does.
 
-![](./img/Auto Close Tag.gif)
+![](./img/AutoCloseTag.gif)
 
 Comment: Annoying at first, but convenience if you get used to it.
 
@@ -28,7 +28,7 @@ _steoates.autoimport_
 
 Automatically finds, parses and provides code actions and code completion for all available imports. Works with Typescript and TSX.
 
-![](./img/Auto Import.gif)
+![](./img/AutoImport.gif)
 
 Comment: Convenience, another similar extension by Martin Oppitz is kind of broken, it imports at unexpected line.
 
@@ -40,7 +40,7 @@ _formulahendry.auto-rename-tag_
 
 Automatically rename paired HTML/XML tag, same as Visual Studio IDE does.
 
-![](./img/Auto Rename Tag.gif)
+![](./img/AutoRenameTag.gif)
 
 Comment: very convenience, there is no reason not to use it.
 
@@ -50,7 +50,7 @@ _mgmcdermott.vscode-language-babel_
 
 JavaScript syntax highlighting for ES201x, React JSX, Flow and GraphQL.
 
-![](./img/4.png)
+![](./img/BabelJavaScript.png)
 
 Comment: After comparison, I believe this is the best syntax highlighting.
 
