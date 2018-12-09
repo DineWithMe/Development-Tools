@@ -2,7 +2,7 @@
 
 [Creative Tim](https://www.creative-tim.com/) is premium themes of Material UI [Material UI](https://material-ui.com/) and the tech behind it is [JSS](https://cssinjs.org/?v=v9.8.7), so the core idea is integrate JSS with Next.
 
-This guide will provide you clear step by step on how to integrate, references:
+The integration progress is complicated but this guide provides you clear step by step on how to integrate, references:
 
 https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/72
 
@@ -312,4 +312,4 @@ module.exports = withImages(withSASS(withCSS()))
 
 Install babel-plugin-css-in-js so that the JSS class has unique name on both server and client side.
 
-Not sure why but you dont need to enable the setting in babelrc or package.json, it just works.
+You dont need to enable the setting in babelrc or package.json, it will works.
