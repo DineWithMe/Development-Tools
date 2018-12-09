@@ -74,6 +74,14 @@ https://zeit.co/docs/v1/features/path-aliases/
 
 https://zeit.co/docs/v1/features/dns/
 
-## 4. Finally
+## 4. Scaling
+
+Now will delete your instance if the instance is inactive, which mean it will go through the reinstallation and rebuild process when someone visit the site again, this is not good because the "first batch" visitors will need to wait for long time, in this case we need to set the instance to minimum 1 instance and maximum 3 instances(free plan).
+
+```
+now scale my-deployment.now.sh 1 3
+```
+
+## 5. Finally
 
 That is it, you should be able to visit your website Now(pun) with your custom domain name, if you dont like to use now-cli then you also can configure your deployment and alias at https://zeit.co/dashboard/deployments
