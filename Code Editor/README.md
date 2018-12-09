@@ -60,7 +60,7 @@ _coenraads.bracket-pair-colorizer_
 
 This extension allows matching brackets to be identified with colours. The user can define which characters to match, and which colours to use.
 
-![](./img/5.png)
+![](./img/BracketPairColorizer.png)
 
 Comment: Can be confusing but it is better than without it.
 
@@ -70,7 +70,7 @@ _peterjausovec.vscode-docker_
 
 The Docker extension makes it easy to build, manage and deploy containerized applications from Visual Studio Code
 
-![](./img/6.gif)
+![](./img/Docker.gif)
 
 Comment: There is no reason not to use it if you are using docker.
 
@@ -80,7 +80,7 @@ _mikestead.dotenv_
 
 A port of DotENV for vscode.
 
-![](./img/7.png)
+![](./img/DotENV.png)
 
 Comment: Simple and useful syntax highlighter.
 
@@ -90,11 +90,11 @@ _dsznajder.es7-react-js-snippets_
 
 This extension provide you Javascript and React/Redux snippets in ES7 with babel plugins features for Vs Code
 
-![](./img/8.1.gif)
+![](./img/ES7React-Redux-GraphQL-React-Nativesnippets.1.gif)
 
-![](./img/8.2.gif)
+![](./img/ES7React-Redux-GraphQL-React-Nativesnippets.2.gif)
 
-![](./img/8.3.gif)
+![](./img/ES7React-Redux-GraphQL-React-Nativesnippets.3.gif)
 
 Comment: Many alternatives out there but personally I think this is the best. Useful but I often forget about it existence.
 
@@ -106,7 +106,7 @@ _eamodio.gitlens_
 
 GitLens supercharges the Git capabilities built into Visual Studio Code. It helps you to visualize code authorship at a glance via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, gain valuable insights via powerful comparison commands, and so much more.
 
-![](./img/9.png)
+![](./img/GitLen—Gitsupercharged.png)
 
 Comment: Very useful vs code git extension especially if you work in a team.
 
@@ -116,7 +116,7 @@ _wix.vscode-import-cost_
 
 This extension will display inline in the editor the size of the imported package. The extension utilizes webpack with babili-webpack-plugin in order to detect the imported size.
 
-![](./img/10.gif)
+![](./img/ImportCost.gif)
 
 Comment: You need this if you want to optimize your package size.
 
@@ -126,7 +126,7 @@ _oderwat.indent-rainbow_
 
 This extension colorizes the indentation in front of your text alternating four different colors on each step. Some may find it helpful in writing code for Nim or Python.
 
-![](./img/11.png)
+![](./img/indent-rainbow.png)
 
 Comment: Not impactful but still nice to have. Very useful if you work with indent sensitive file.
 
@@ -136,9 +136,9 @@ _streetsidesoftware.code-spell-checker_
 
 A basic spell checker that works well with camelCase code.
 
-![](./img/12.1.gif)
+![](./img/CodeSpellChecker.1.gif)
 
-![](./img/12.2.gif)
+![](./img/CodeSpellChecker.2.gif)
 
 Comment: Comes with GUI, easy to use, would be better if it uses red color for linter. It doesn't check on grammar though.
 
@@ -148,7 +148,7 @@ _esbenp.prettier-vscode_
 
 VS Code package to format your JavaScript / TypeScript / CSS using Prettier.
 
-![](./img/13.png)
+![](./img/Prettier-Codeformatter.png)
 
 Comment: I would say this is a **must have** extension, it save your trouble styling your code, work with eslint. It is also available in npm to install as developer dependency.
 
@@ -170,7 +170,7 @@ _angryobject.react-pure-to-class-vscode_
 
 Replaces pure functional react components with class components.
 
-![](./img/14.gif)
+![](./img/ReactPureToClass.gif)
 
 Comment: Change component to React component with ease.
 
@@ -180,7 +180,7 @@ _shan.code-settings-sync_
 
 Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspace and Extensions Across Multiple Machines Using GitHub Gist.
 
-![](./img/15.png)
+![](./img/SettingsSync.png)
 
 Comment: Save your extensions and save you from headache trying to reinstall them in new machine.
 
@@ -190,7 +190,7 @@ _jvandyke.vscode-circleci_
 
 CircleCI commands and status
 
-![](./img/16.jpg)
+![](./img/CircleCI.jpg)
 
 Comment: Access the status of your push without visiting github or circle ci dashboard.
 
@@ -200,7 +200,7 @@ _bierner.emojisense_
 
 Adds suggestions and autocomplete for emoji to VS Code.
 
-![](./img/17.gif)
+![](./img/emojisense.gif)
 
 Comment: The rest of emoji extensions is not intuitive as this one.
 
@@ -210,7 +210,7 @@ _chrisdias.vscode-opennewinstance_
 
 Quickly open a new instance of VS Code from the Explorer
 
-![](./img/18.png)
+![](./img/OpenFolderContextMenusforVSCode.png)
 
 Comment: Handy small tool.
 
@@ -220,9 +220,9 @@ _formulahendry.code-runner_
 
 Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, PHP, Python, Perl, Perl 6, Ruby, Go, Lua, Groovy, PowerShell, BAT/CMD, BASH/SH, F# Script, F# (.NET Core), C# Script, C# (.NET Core), VBScript, TypeScript, CoffeeScript, Scala, Swift, Julia, Crystal, OCaml Script, R, AppleScript, Elixir, Visual Basic .NET, Clojure, Haxe, Objective-C, Rust, Racket, AutoHotkey, AutoIt, Kotlin, Dart, Free Pascal, Haskell, Nim, D, and custom command
 
-![](./img/19.1.gif)
+![](./img/CodeRunner.1.gif)
 
-![](./img/19.2.gif)
+![](./img/CodeRunner.2.gif)
 
 Comment: No need to run the whole script just to test a piece of small code.
 
@@ -232,7 +232,7 @@ _jakob101.relativepath_
 
 Get relative url paths from files in the current workspace.
 
-![](./img/20.gif)
+![](./img/RelativePath.gif)
 
 Comment: No more frustration when typing file path.
 
@@ -242,11 +242,11 @@ _christian-kohler.npm-intellisense_
 
 Visual Studio Code plugin that autocompletes npm modules in import statements.
 
-![](./img/21.1.gif)
+![](./img/npmIntellisense.1.gif)
 
-![](./img/21.2.gif)
+![](./img/npmIntellisense.2.gif)
 
-![](./img/21.3.gif)
+![](./img/npmIntellisense.3.gif)
 
 Comment: Good for importing npm module.
 
@@ -256,10 +256,10 @@ _kumar-harsh.graphql-for-vscode_
 
 VSCode extension for GraphQL schema authoring & consumption.
 
-![](./img/21.1.gif)
+![](./img/GraphQLforVSCode.1.gif)
 
-![](./img/21.2.gif)
+![](./img/GraphQLforVSCode.2.gif)
 
-![](./img/21.3.gif)
+![](./img/GraphQLforVSCode.3.gif)
 
 Comment: Syntax highlighting
