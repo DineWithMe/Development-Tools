@@ -6,7 +6,7 @@ Zeit Now make Node serverless deployment easy, probably the easiest solution ava
 
 Here is the step on how to setup the deployment:
 
-see everything in:  
+read everything in:  
 https://zeit.co/docs/v1/clients/now-cli/
 
 ## 1. Install now cli
@@ -19,7 +19,7 @@ Why not install globally?
 
 Because I like to keep everything in project so that when people reuse my project, they simply run "npm i" and every tools is ready.
 
-see more in:  
+read more in:  
 https://zeit.co/docs/v1/clients/now-cli/
 
 ## 2. Create a add a "now" key in package.json
@@ -37,7 +37,7 @@ I prefer cleaner root directory so instead of now.json, I configure Now in packa
   }
 ```
 
-see more in:  
+read more in:  
 https://zeit.co/blog/now-json
 
 https://zeit.co/docs/v1/features/build-env-and-secrets/
@@ -65,7 +65,7 @@ create a npm scripts and run it
 "deploy": "now && now alias mydomain && now alias www.mydomain"
 ```
 
-see more in:  
+read more in:  
 [how to change name servers](https://www.youtube.com/watch?v=wNqsPau-cyE)
 
 https://zeit.co/dns#get-started
@@ -81,6 +81,11 @@ Now will delete your instance if the instance is inactive, which mean it will go
 ```
 now scale my-deployment.now.sh 1 3
 ```
+
+read more in:  
+https://zeit.co/blog/scale
+
+https://zeit.co/docs/v1/features/scaling/
 
 ## 5. Finally
 

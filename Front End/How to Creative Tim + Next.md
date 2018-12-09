@@ -242,11 +242,11 @@ Copy the code to your src/getPageContext.js
 
 ## 7. Window object
 
-Any component that call window object the moment it is rendered cannot be done on server side(but it is ok if window object is called in lifecycle because lifecycle only run on client side).
+Any component that call window object the moment it is rendered cannot be done on server side(but it is ok if window object is called in life cycle because life cycle only run on client side).
 
 https://github.com/zeit/next.js/wiki/FAQ
 
-Use dynamic import to solve this problem
+Use dynamic import or ComponentDidMount to solve this problem
 
 Example:
 
