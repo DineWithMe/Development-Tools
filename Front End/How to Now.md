@@ -82,7 +82,13 @@ https://zeit.co/docs/v1/features/dns/
 Now will delete your instance if the instance is inactive, which mean it will go through the reinstallation and rebuild process when someone visit the site again, this is not good because the "first batch" visitors will need to wait for long time, in this case we need to set the instance to minimum 1 instance and maximum 3(or auto) instances for free plan.
 
 ```
-now scale my-deployment.now.sh 1 auto
+now scale mydomain 1 auto
+```
+
+tips: you can also combine this command into step 4's npm scripts, so the whole thing looks like
+
+```
+"deploy": "now && now alias mydomain && now alias && now scale mydomain 1 auto"
 ```
 
 read more at:  
