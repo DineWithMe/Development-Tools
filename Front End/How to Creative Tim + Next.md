@@ -244,8 +244,6 @@ Copy the code to your src/getPageContext.js
 
 Any component that call window object the moment it is rendered cannot be done on server side(but it is ok if window object is called in life cycle because life cycle only run on client side).
 
-https://github.com/zeit/next.js/wiki/FAQ
-
 Use dynamic import or ComponentDidMount to solve this problem
 
 Example:
@@ -262,6 +260,9 @@ to:
 import dynamic from 'next/dynamic'
 const Dashboard = dynamic(import('../views/Dashboard/Dashboard'), { ssr: false })
 ```
+
+read more:  
+https://github.com/zeit/next.js/wiki/FAQ
 
 ## 8. Link
 
@@ -313,3 +314,8 @@ module.exports = withImages(withSASS(withCSS()))
 Install babel-plugin-css-in-js so that the JSS class has unique name on both server and client side.
 
 You dont need to enable the setting in babelrc or package.json, it works as well.
+
+However if you want to explicitly enable it in babelrc or package.json, you also must explicitly enable next/babel presets as well.
+
+read more:  
+https://github.com/zeit/next.js/tree/canary/examples/with-custom-babel-config
