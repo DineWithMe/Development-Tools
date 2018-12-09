@@ -312,4 +312,4 @@ module.exports = withImages(withSASS(withCSS()))
 
 Install babel-plugin-css-in-js so that the JSS class has unique name on both server and client side.
 
-You dont need to enable the setting in babelrc or package.json, it will works.
+You dont need to enable the setting in babelrc or package.json, it works as well.
