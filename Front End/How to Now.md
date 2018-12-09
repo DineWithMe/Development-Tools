@@ -1,4 +1,4 @@
-# Global Serverless Deployments on Now
+# Global Serverless Deployments with Now
 
 ![](./img/Now.png)
 
@@ -15,7 +15,9 @@ https://zeit.co/docs/v1/clients/now-cli/
 npm i -D now
 ```
 
-I like to keep everything in project so that when people reuse my project, they simply run "npm i" and every tools is ready.
+Why not install globally?
+
+Becayse I like to keep everything in project so that when people reuse my project, they simply run "npm i" and every tools is ready.
 
 see more in:  
 https://zeit.co/docs/v1/clients/now-cli/
