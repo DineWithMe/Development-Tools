@@ -19,7 +19,7 @@ Why not install globally?
 
 Because I like to keep everything in project so that when people reuse my project, they simply run "npm i" and every tools is ready.
 
-read more in:  
+read more at:  
 https://zeit.co/docs/v1/clients/now-cli/
 
 ## 2. Create a add a "now" key in package.json
@@ -33,11 +33,12 @@ I prefer cleaner root directory so instead of now.json, I configure Now in packa
     "dotenv": ".env file path",
     "env": {
       "NODE_ENV": "production" // exclude dev-dependency from installation, this also mean that you might want to install some dev-dependency as dependency if you rely on them in npm scripts "build" and "start" because Now use these two scripts to build and start
-    }
+    },
+    "alias":"mydomain" // when you run "now alias" command after deployment, it will pick up this alias key's value as argument
   }
 ```
 
-read more in:  
+read more at:  
 https://zeit.co/blog/now-json
 
 https://zeit.co/docs/v1/features/build-env-and-secrets/
@@ -59,13 +60,15 @@ e.zeit.world	46.31.237.1	2600:180b:5001::1
 f.zeit.world	43.247.171.1	2600:180c:6001::1
 ```
 
+## 4. Deployment
+
 create a npm scripts and run it
 
 ```
-"deploy": "now && now alias mydomain && now alias www.mydomain"
+"deploy": "now && now alias mydomain && now alias"
 ```
 
-read more in:  
+read more at:  
 [how to change name servers](https://www.youtube.com/watch?v=wNqsPau-cyE)
 
 https://zeit.co/dns#get-started
@@ -74,19 +77,28 @@ https://zeit.co/docs/v1/features/path-aliases/
 
 https://zeit.co/docs/v1/features/dns/
 
-## 4. Scaling
+## 5. Scaling
 
-Now will delete your instance if the instance is inactive, which mean it will go through the reinstallation and rebuild process when someone visit the site again, this is not good because the "first batch" visitors will need to wait for long time, in this case we need to set the instance to minimum 1 instance and maximum 3 instances(free plan).
+Now will delete your instance if the instance is inactive, which mean it will go through the reinstallation and rebuild process when someone visit the site again, this is not good because the "first batch" visitors will need to wait for long time, in this case we need to set the instance to minimum 1 instance and maximum 3(or auto) instances for free plan.
 
 ```
-now scale my-deployment.now.sh 1 3
+now scale my-deployment.now.sh 1 auto
 ```
 
-read more in:  
+read more at:  
 https://zeit.co/blog/scale
 
 https://zeit.co/docs/v1/features/scaling/
 
-## 5. Finally
+## 6. But wait, there is one more thing, redirecting wwww domain to naked domain!
+
+Of course you can create a new www.mydomain alias but to get the most link juice out of search engine optimization is status 310 redirecting.
+
+The way to do it is to create an empty website that redirect visitor to naked domain, check this example: https://github.com/zeit/now-examples/tree/master/redirect
+
+read more at:
+https://ericsachsseo.com/complete-guide-best-practices-url-redirects/
+
+## 7. Finally
 
 That is it, you should be able to visit your website Now(pun) with your custom domain name, if you dont like to use now-cli then you also can configure your deployment and alias at https://zeit.co/dashboard/deployments
