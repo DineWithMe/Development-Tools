@@ -83,6 +83,6 @@ It is because of how easy to deploy app on it, you can do it in just one command
 
 This means a lot for sole developer which is just impossible to micromanage everything. As a sole developer you should always put more resources in developing your app, not server and infrastructure because we simply dont have that much of time.
 
-Now make your life a breeze but of course Now is not the only serverless out there, there are Heroku, Cloudflare and big names like Google, Microsoft and Amazon but none of it is as easy as Now, the closest one would be Heroku.
+Now make your life a breeze but of course Now is not the only serverless out there, there are Heroku, Cloudflare and big names like IBM, Google, Microsoft and Amazon but none of it is as easy as Now, the closest one would be Heroku.
 
 Extra: Now and Next are actually developed by the same company, Zeit.
