@@ -47,7 +47,7 @@ That is why I choose Next, because Next is actually an universal renderer, it ca
 
 Other than Next, Gatsby is extremely attractive option is you want to host static page(Next also can do the same), it is blazing fast, I strongly recommend it but somehow tricky to render dynamic content with Gatsby(I dont have much research yet); speaking about After, After is fairly new and heavily inspired by Next, the different is After adopt different routing philosophy (which Next will adopt too).
 
-# 3. Redux
+## 3. Redux
 
 _this paragraph is deprecated, now we use Unstated but keep this for the purpose of reading_
 
@@ -72,3 +72,17 @@ Summarize on how redux work
 5, after reducers finish their job, they return all the states to store.
 
 Redux is what most people familiar with plus it play well with Next so I will stick with it for now, but tiny library like Unstated and Meiosis seem worth considering too.
+
+## 4. Now
+
+![](./img/Now.png)
+
+When come to deployment, Now is probably the most attractive platform to deploy our app from, it has global DNS and global CDN(only in paid plan) but this is not the reason behind the attraction.
+
+It is because of how easy to deploy app on it, you can do it in just one command and your website is online now(pun) plus automatic SSL certification, pay some fee and you get a global CDN and anti DDoS.
+
+This means a lot for sole developer which is just impossible to micromanage everything. As a sole developer you should always put more resources in developing your app, not server and infrastructure because we simply dont have that much of time.
+
+Now make your life a breeze but of course Now is not the only serverless out there, there are Heroku, Cloudflare and big names like Google, Microsoft and Amazon but none of it is as easy as Now, the closest one would be Heroku.
+
+Extra: Now and Next are actually developed by the same company, Zeit.
