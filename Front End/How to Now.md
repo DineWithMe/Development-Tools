@@ -17,7 +17,7 @@ npm i -D now
 
 Why not install globally?
 
-Becayse I like to keep everything in project so that when people reuse my project, they simply run "npm i" and every tools is ready.
+Because I like to keep everything in project so that when people reuse my project, they simply run "npm i" and every tools is ready.
 
 see more in:  
 https://zeit.co/docs/v1/clients/now-cli/
