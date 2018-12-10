@@ -106,7 +106,7 @@ Of course you can create a new www.mydomain alias but to get the most link juice
 
 The way to do it is to create an empty website that redirect visitor to naked domain, check this example: https://github.com/zeit/now-examples/tree/master/redirect
 
-read more at:
+read more at:  
 https://ericsachsseo.com/complete-guide-best-practices-url-redirects/
 
 https://en.wikipedia.org/wiki/HTTP_301
