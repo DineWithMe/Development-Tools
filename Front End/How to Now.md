@@ -29,7 +29,7 @@ I prefer cleaner root directory so instead of now.json, I configure Now in packa
 ```
   "now": {
     "version": 2, // if you have problem deploying in Now 2.0, you can deploy it in version 1
-    "name": "MyApp",
+    "name": "MyAppName",
     "dotenv": ".env file path",
     "env": {
       "NODE_ENV": "production" // exclude dev-dependency from installation, this also mean that you might want to install some dev-dependency as dependency if you rely on them in npm scripts "build" and "start" because Now use these two scripts to build and start
@@ -85,10 +85,12 @@ Now will delete your instance if the instance is inactive, which mean it will go
 now scale mydomain 1 auto
 ```
 
-tips: you can also combine this command into step 4's npm scripts, so the whole thing looks like
+tips-1: you can also combine this command into step 4's npm scripts, so the whole thing looks like
+
+tips-2: to make thing easier, you can also add "now rm MyAppName" into the script, this will remove old deployment before deploying new one, this is optional as Now allow you to have infinite deployment(but keep in mind the instances is limited).
 
 ```
-"deploy": "now && now alias mydomain && now alias && now scale mydomain 1 auto"
+"deploy": "now rm MyAppName && now && now alias mydomain && now alias && now scale mydomain 1 auto"
 ```
 
 read more at:  
