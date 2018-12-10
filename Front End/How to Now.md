@@ -68,7 +68,7 @@ create a npm scripts and run it
 "deploy": "now && now alias && now alias"
 ```
 
-Note: you can use shorthand `now alias` instead of `now alias mydomain` if you define your alias name in package.json
+Note: you can use shorthand `now alias` instead of `now alias mydomain` if you defined your alias name in package.json
 
 read more at:  
 [how to change name servers](https://www.youtube.com/watch?v=wNqsPau-cyE)
@@ -89,7 +89,7 @@ now scale mydomain 1 auto
 
 tips-1: you can also combine this command into step 4's npm scripts, so the whole thing looks like
 
-tips-2: to make thing easier, you can also add `now rm MyAppName` into the script, this will remove old deployment before deploying new one, this is optional as Now allow you to have infinite deployment(but keep in mind the instances is limited).
+tips-2: to make thing easier, you can also add `now rm MyAppName` into the script, this will remove old deployment before deploying new one, this is optional as Now allow you to have infinite deployment(but keep in mind the instances are limited).
 
 ```
 "deploy": "now rm MyAppName && now && now alias && now alias && now scale mydomain 1 auto"
