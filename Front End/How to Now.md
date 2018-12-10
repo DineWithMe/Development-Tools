@@ -107,6 +107,8 @@ https://ericsachsseo.com/complete-guide-best-practices-url-redirects/
 
 https://en.wikipedia.org/wiki/HTTP_301
 
+https://www.raygesualdo.com/posts/301-redirects-with-nextjs/
+
 ## 7. Finally
 
 That is it, you should be able to visit your website Now(pun) with your custom domain name, if you dont like to use now-cli then you also can configure your deployment and alias at https://zeit.co/dashboard/deployments
