@@ -39,7 +39,7 @@ But when you send a React page, you are actually sending skeleton html page with
 
 Why we need client side rendering? Basically 1 reason: user interactive.
 
-Single page application is example of client side render, we called it application because csr allows the UI to be rendered on client side dynamically and make web app much more application like hence single page application, why single page? Because it is like having one application thus single page, everything is in one url(but having many urls still possible).
+Single page application is example of client side render, it is called application because csr allows the UI to be rendered on client side dynamically and make web app much more application. Why "single page"? Because it is like having one application thus single page, everything is in one url(having many urls are very possible).
 
 If you can change what to be appeared in the browser, it make user interactive richer and much more fun, you can even create a game out of it. Client side rendering also have faster initial page load, but experience of waiting for all pieces to be put together can be awful.
 
