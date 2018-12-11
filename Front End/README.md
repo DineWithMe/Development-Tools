@@ -27,25 +27,23 @@ If I would pick up another library, I think Vue is a good choice and Imba is ver
 
 ![](./img/Next.png)
 
-There are actually not much React frameworks out there when come to server side renderer, presumably Next, Gatsby and After. Why we need server side rendering? Basically 2 reasons: performance and search engine optimization.
+There are actually not much React frameworks out there when come to server side renderer, presumably Next, Gatsby(better known as static page generator) and After. Why we need server side rendering? Basically 2 reasons: performance and search engine optimization(SEO purpose is actually getting trivial).
 
-Server side rendering effectively reduce round trip make to server, it is much cost effective to serve as much as possible in one round trip, an analogy in real world would be if you want to fetch 20 people but your car can only carry 5 people, you would carry 5 people per trip because that is the most effective way to do so. Thing will get complicated if the payload getting bigger but we wont go deep in this paragraph.
+In the world of internet, we all at the mercy of Google (joke, Google actually want related site to be discover to increase search precision). To improve your Google search ranking, you need to tell Google what your site are and the way to do so is to let Google crawl your page and understand your content as much as possible.
 
-In older time, we can only do server side or client side rendering but not both, ssr allows webpage with its UI and dynamic data ready when the page is loaded but the page is static, you are not able to change the UI on the page but you still able to fetch data with AJAX. Serving static site is fast and fast is good, everything is ready when page is loaded, it improves user experience, however it may not be fast at all level because the initial page load is longer.
+But when you send a React page, you are actually sending skeleton html page with no content for Google to crawl, the content only available after client finish render it, here is why server side rendering shine. The good news is Google is improving client side rendering crawling algorithm and we also have pre-rendering as solution for SEO, which is why it is getting trivial to boost SEO score via SSR.
 
-In the world of internet, we all at the mercy of Google (joke, Google actually want related site to be discover). To improve your Google search ranking, you need to tell Google what your site are and the way to do so is to let Google crawl your page and understand your content as much as possible.
+But keep in mind that Google is not the only search engine out there, Google has market share of around 80%.
 
-But when you send a React page, you are actually sending skeleton html page with no content for Google to crawl, the content only available after client finish render it, here is why server side rendering shine. Yes, google is improving client side rendering crawling algorithm but that is still not enough.
+Instead of SEO, what we should focus is performance, server side rendering effectively reduce round trip make to server, this is good if your user has slow connection. Yes, even though internet speed getting better and better, slow connection is still a major problem because latency is not something that improve with bandwidth.
 
-Why we need client side rendering? Basically 1 reason: user interactive.
+However even though round trips make to server is lesser per page, the request to server is actually much higher than that in CSR this is because every page is a request to server, and this is where the client side rendering did a better job. Although CSR has higher initial page load than SCR but the subsequent page load is fast because it is no longer require another request to server.
 
-Single page application is example of client side render, it is called "application" because csr allows the UI to be rendered on client side dynamically and make web app much more application like. Why "single page"? Because it is like having one application in one url(having many urls are very possible).
+That is why I choose Next, because Next is actually an universal renderer, it can renders both client side and server side, we can have the best of both. The initial page load is done with SSR and the subsequent page load is done with CSR
 
-If you can change what to be appeared in the browser, it make user interactive richer and much more fun, you can even create a game out of it. Client side rendering also have faster initial page load, but experience of waiting for all pieces to be put together can be awful.
+Looking for static page generator? Next also can export static file.
 
-That is why I choose Next, because Next is actually an universal renderer, it can renders both client side and server side, we can have the best of both. We can have everything ready on the server side and at the same time provide rich interactive user experience on the client side.
-
-Other than Next, Gatsby is extremely attractive option is you want to host static page(Next also can do the same), it is blazing fast, I strongly recommend it but somehow tricky to render dynamic content with Gatsby(I dont have much research yet); speaking about After, After is fairly new and heavily inspired by Next, the different is After adopt different routing philosophy (which Next will adopt too).
+Other than Next, Gatsby is extremely attractive option is you want static page, it is blazing fast, I strongly recommend it but somehow tricky to render dynamic content with Gatsby(I dont have much research yet); speaking about After, After is fairly new and heavily inspired by Next, the different is After adopt different routing philosophy (which Next will adopt too).
 
 ## 3. Redux
 
