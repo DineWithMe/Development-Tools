@@ -227,9 +227,9 @@ Copy the code to your src/getPageContext.js
 
 ## 4. Refactoring Creative Tim
 
-1. Copy src/assests from Creative Tim project into static folder
-2. Copy src/component, src/routes, src/views into vendor folder or whatever name you like.
-3. Creative Tim use dynamic routing but Next use file system routing so you have to refactor all the import path of every file you copy in step 1. and 2.
+1. Copy src/assets/jss, src/assets/sass, src/component and src/views from Creative Tim project into src/
+2. Copy src/assets/img into static, you must put img in static folder, order stuff you have freedom
+3. Refactor all the import path of every file you copy in step 1, it gonna take a while, I advise you to use your code editor `replace all file` function
 
 ## 5. Header
 
