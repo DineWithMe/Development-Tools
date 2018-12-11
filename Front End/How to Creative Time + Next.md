@@ -2,6 +2,8 @@
 
 [Creative Tim](https://www.creative-tim.com/) is premium themes of Material UI [Material UI](https://material-ui.com/) and the tech behind it is [JSS](https://cssinjs.org/?v=v9.8.7), so the core idea is integrate JSS with Next.
 
+The template for this project is [Material Kit Pro React](https://www.creative-tim.com/product/material-kit-pro-react)
+
 The integration progress is complicated but this guide provides you clear step by step on how to integrate, references:
 
 https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/72
