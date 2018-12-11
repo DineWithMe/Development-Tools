@@ -39,7 +39,7 @@ Instead of SEO, what we should focus is performance, server side rendering effec
 
 However even though round trips make to server is lesser per page, the request to server is actually much higher than that in CSR this is because every page is a request to server, and this is where the client side rendering did a better job. Although CSR has higher initial page load than SCR but the subsequent page load is fast because it is no longer require another request to server.
 
-That is why I choose Next, because Next is actually an universal renderer, it can renders both client side and server side, we can have the best of both. The initial page load is done with SSR and the subsequent page load is done with CSR
+That is why I choose Next, because Next is actually an universal renderer, it can renders both client side and server side, we can have the best of both. With Nextjs, it is possible that the initial page load is done with SSR and the subsequent page load can be done with CSR.
 
 Looking for static page generator? Next also can export static file.
 
