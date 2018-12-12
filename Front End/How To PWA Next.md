@@ -27,7 +27,7 @@ You will see something like this, download the package.
 
 ### 2 Copy into the project
 
-Unzip the code and copy all the files into your project `static` folder, I recommend `static/public`, rename `site.webmanifest` to `manifest.json`.
+Unzip the code and copy all the files into your project `static` folder, I recommend `static/public`.
 
 In your \_document.js, paste the code in `Head` and refactor the path.
 
@@ -38,7 +38,7 @@ This is JSX, dont forget to self-closed the tag.
   <link rel="apple-touch-icon" sizes="180x180" href="/static/public/apple-touch-icon.png"/>
   <link rel="icon" type="image/png" sizes="32x32" href="/static/public/favicon-32x32.png"/>
   <link rel="icon" type="image/png" sizes="16x16" href="/static/public/favicon-16x16.png"/>
-  <link rel="manifest" href="/static/public/manifest.json"/>
+  <link rel="manifest" href="/static/public/site.webmanifest"/>
   <link rel="mask-icon" href="/static/public/safari-pinned-tab.svg" color="#5bbad5"/>
   <meta name="msapplication-TileColor" content="#da532c"/>
   <meta name="theme-color" content="#ffffff"/>
@@ -47,7 +47,7 @@ This is JSX, dont forget to self-closed the tag.
 
 ### 3. Modify the manifest file
 
-Go to your `static/public` folder and open the `manifest.json`
+Go to your `static/public` folder and open the `site.webmanifest`
 
 ```
 {
