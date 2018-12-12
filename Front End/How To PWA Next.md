@@ -164,7 +164,7 @@ app.prepare().then(() => {
     const parsedUrl = parse(req.url, true);
     const { pathname } = parsedUrl;
 
-    if (pathname === '/sw.js') {
+    if (pathname === '/serviceWorker.js') {
       res.setHeader('content-type', 'text/javascript');
       createReadStream('./offline/serviceWorker.js').pipe(res);
     } else {
