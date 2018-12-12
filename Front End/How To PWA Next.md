@@ -1,9 +1,10 @@
 # Create Next Progressive Web App
 
-For this tutorial, basically there is 2 parts:
+For this tutorial, basically there is 3 parts:
 
 - preparing manifest and icons
 - register service worker
+- Publish to App Store (not ready yet)
 
 ## Part 1 Manifest and Icons
 
@@ -16,7 +17,7 @@ https://developers.google.com/web/fundamentals/app-install-banners/#criteria
 
 ### 1. Generate manifest and icons
 
-Go to https://realfavicongenerator.net/ and create your manifest and icons, this website is probably the easiest to use.
+Go to https://realfavicongenerator.net/ and create your manifest and icons, this website is one of the easiest to use. (Edit: actually https://www.pwabuilder.com/ is better)
 
 You will have some option along the way, configure it if you want.
 
