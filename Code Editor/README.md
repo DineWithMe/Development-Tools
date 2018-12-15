@@ -12,17 +12,7 @@ With open source comes great community, with great community comes great extensi
 
 I choose what I believe is the best, you are free to have your own options, you should be able to find similar extension in your favorite editor.
 
-## 1. Auto Close Tag
-
-_formulahendry.auto-close-tag_
-
-Automatically add HTML/XML close tag, same as Visual Studio IDE or Sublime Text does.
-
-![](./img/AutoCloseTag.gif)
-
-Comment: Annoying at first, but convenience if you get used to it.
-
-## 2. Auto Import
+## Auto Import
 
 _steoates.autoimport_
 
@@ -34,7 +24,7 @@ Comment: Convenience, another similar extension by Martin Oppitz is kind of brok
 
 Note: the gif is taken from other extension.
 
-## 3. Auto Rename Tag
+## Auto Rename Tag
 
 _formulahendry.auto-rename-tag_
 
@@ -44,7 +34,7 @@ Automatically rename paired HTML/XML tag, same as Visual Studio IDE does.
 
 Comment: very convenience, there is no reason not to use it.
 
-## 4. Babel JavaScript
+## Babel JavaScript
 
 _mgmcdermott.vscode-language-babel_
 
@@ -54,7 +44,7 @@ JavaScript syntax highlighting for ES201x, React JSX, Flow and GraphQL.
 
 Comment: After comparison, I believe this is the best syntax highlighting.
 
-## 5. Bracket Pair Colorizer
+## Bracket Pair Colorizer
 
 _coenraads.bracket-pair-colorizer_
 
@@ -64,7 +54,7 @@ This extension allows matching brackets to be identified with colours. The user 
 
 Comment: Can be confusing but it is better than without it.
 
-## 6. Docker
+## Docker
 
 _peterjausovec.vscode-docker_
 
@@ -74,7 +64,7 @@ The Docker extension makes it easy to build, manage and deploy containerized app
 
 Comment: There is no reason not to use it if you are using docker.
 
-## 7. DotENV
+## DotENV
 
 _mikestead.dotenv_
 
@@ -84,7 +74,7 @@ A port of DotENV for vscode.
 
 Comment: Simple and useful syntax highlighter.
 
-## 8. ES7 React/Redux/GraphQL/React-Native snippets
+## ES7 React/Redux/GraphQL/React-Native snippets
 
 _dsznajder.es7-react-js-snippets_
 
@@ -100,7 +90,7 @@ Comment: Many alternatives out there but personally I think this is the best. Us
 
 Note: the gif is taken from other extension.
 
-## 9. GitLens — Git supercharged
+## GitLens — Git supercharged
 
 _eamodio.gitlens_
 
@@ -110,7 +100,7 @@ GitLens supercharges the Git capabilities built into Visual Studio Code. It help
 
 Comment: Very useful vs code git extension especially if you work in a team.
 
-## 10. Import Cost
+## Import Cost
 
 _wix.vscode-import-cost_
 
@@ -120,7 +110,7 @@ This extension will display inline in the editor the size of the imported packag
 
 Comment: You need this if you want to optimize your package size.
 
-## 11. indent-rainbow
+## indent-rainbow
 
 _oderwat.indent-rainbow_
 
@@ -130,7 +120,7 @@ This extension colorizes the indentation in front of your text alternating four 
 
 Comment: Not impactful but still nice to have. Very useful if you work with indent sensitive file.
 
-## 12. Code Spell Checker
+## Code Spell Checker
 
 _streetsidesoftware.code-spell-checker_
 
@@ -142,7 +132,7 @@ A basic spell checker that works well with camelCase code.
 
 Comment: Comes with GUI, easy to use, would be better if it uses red color for linter. It doesn't check on grammar though.
 
-# 13. Prettier - Code formatter
+## Prettier - Code formatter
 
 _esbenp.prettier-vscode_
 
@@ -164,7 +154,7 @@ Recommended setting:
 "prettier.semi": false,  
 "prettier.arrowParens": "always"
 
-# 14. React Pure To Class
+## React Pure To Class
 
 _angryobject.react-pure-to-class-vscode_
 
@@ -174,7 +164,7 @@ Replaces pure functional react components with class components.
 
 Comment: Change component to React component with ease.
 
-# 15. Settings Sync
+## Settings Sync
 
 _shan.code-settings-sync_
 
@@ -184,7 +174,7 @@ Synchronize Settings, Snippets, Themes, File Icons, Launch, Keybindings, Workspa
 
 Comment: Save your extensions and save you from headache trying to reinstall them in new machine.
 
-# 16. CircleCI
+## CircleCI
 
 _jvandyke.vscode-circleci_
 
@@ -194,7 +184,7 @@ CircleCI commands and status
 
 Comment: Access the status of your push without visiting github or circle ci dashboard.
 
-# 17. :emojisense:
+## :emojisense:
 
 _bierner.emojisense_
 
@@ -204,7 +194,7 @@ Adds suggestions and autocomplete for emoji to VS Code.
 
 Comment: The rest of emoji extensions is not intuitive as this one.
 
-# 18. Open Folder Context Menus for VS Code
+## Open Folder Context Menus for VS Code
 
 _chrisdias.vscode-opennewinstance_
 
@@ -214,7 +204,7 @@ Quickly open a new instance of VS Code from the Explorer
 
 Comment: Handy small tool.
 
-# 19. Code Runner
+## Code Runner
 
 _formulahendry.code-runner_
 
@@ -226,7 +216,7 @@ Run code snippet or code file for multiple languages: C, C++, Java, JavaScript, 
 
 Comment: No need to run the whole script just to test a piece of small code.
 
-# 20. Relative Path
+## Relative Path
 
 _jakob101.relativepath_
 
@@ -236,7 +226,7 @@ Get relative url paths from files in the current workspace.
 
 Comment: No more frustration when typing file path.
 
-# 21. npm Intellisense
+## npm Intellisense
 
 _christian-kohler.npm-intellisense_
 
@@ -250,7 +240,7 @@ Visual Studio Code plugin that autocompletes npm modules in import statements.
 
 Comment: Good for importing npm module.
 
-# 22. GraphQL for VSCode
+## GraphQL for VSCode
 
 _kumar-harsh.graphql-for-vscode_
 
