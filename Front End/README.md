@@ -12,13 +12,13 @@ We use react to build user interface. Personally I like the idea of component, i
 
 However this doesn't necessary increase the workload as others can work on another component without you involved in it. The best thing is, component thinking allows us to reuse the resources easily and I believe this is a correct direction.
 
-How separation of concern work in:
-
 | Employees | Conventional | React          |
 | --------- | ------------ | -------------- |
 | A         | do html      | do component x |
 | B         | do js        | do component y |
 | C         | do css       | do component z |
+
+_This table illustrates of React change the paradigm of separation of concern._
 
 But why react? Because there are also library that adopt or gravitate toward component thinking, why react?
 
