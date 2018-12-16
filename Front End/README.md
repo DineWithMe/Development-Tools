@@ -18,7 +18,7 @@ However this doesn't necessary increase the workload as others can work on anoth
 | B         | do js        | do component y |
 | C         | do css       | do component z |
 
-_This table illustrates of React change the paradigm of separation of concern._
+_This table illustrates how React changes the paradigm of separation of concern._
 
 But why react? Because there are also library that adopt or gravitate toward component thinking, why react?
 
