@@ -10,7 +10,19 @@ Here is simple justification of important library that we are going to use.
 
 We use react to build user interface. Personally I like the idea of component, it changes the philosophy of separation of concern. It increase the learning curve as it requires a programmer to have all kinds of knowledge (html+js+css).
 
-However this doesn't necessary increase the workload as others can work on another component without you involved in it. The best thing is, component thinking allows us to reuse the resources easily. I believe this is a correct direction.
+However this doesn't necessary increase the workload as others can work on another component without you involved in it. The best thing is, component thinking allows us to reuse the resources easily and I believe this is a correct direction.
+
+Conventional separation of concern:
+
+1. A do html
+2. B do js
+3. C do css
+
+React separation of concern:
+
+1. A do component x
+2. B do component y
+3. C do component z
 
 But why react? Because there are also library that adopt or gravitate toward component thinking, why react?
 
