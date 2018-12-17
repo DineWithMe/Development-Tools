@@ -93,7 +93,7 @@ you need to also configure the DNS record for this two subdomain.
 node.mydomain is your application server and prisma.mydomain is your ORM server.
 
 ```
-Caddy
+caddy
 ```
 
 In the same directory with the Caddy file, start Caddy and the reverse proxy is working now.
