@@ -97,6 +97,6 @@ Extra: Now and Next are actually developed by the same company, Zeit.
 
 ![](./img/Unstated.png)
 
-Unstated is a state management library that utilize React Context API, I have not much to say about it because working with it is soo simple, working with it feel like working with React class.
+Unstated is a state management library that utilize React Context API, I have not much to say about it because it is soo simple, working with it simply feel like working with React class.
 
 You would be happy to use Unstated if you are tired of Redux boiler plate, I recommend this library, it really deserves more attention.
