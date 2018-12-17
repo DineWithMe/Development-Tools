@@ -24,7 +24,7 @@ https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubunt
 
 Now login to the Ubuntu VPS with the newly created user using Bitvise, do not work with root user because by doing so it poses some security issue.
 
-Using Bitvise SFTP window, create a "BackEnd" folder, and paste the back end code in it , you dont need to copy everything, just copy the necessary code.
+Using Bitvise SFTP window, create a "BackEnd" folder(any name is fine), and paste the back end code in it , you dont need to copy everything, just copy the necessary code.
 
 # 5. Install NPM and Caddy in VPS
 
