@@ -92,3 +92,11 @@ This means a lot for sole developer which is just impossible to micromanage ever
 Now make your life a breeze but of course Now is not the only serverless out there, there are Heroku, Cloudflare, Digital Ocean, Hostgator and big names like IBM, Google, Microsoft and Amazon but none of it is as easy as Now when come to deploying Node app, the closest one would be Heroku.
 
 Extra: Now and Next are actually developed by the same company, Zeit.
+
+## Unstated
+
+![](./img/Unstated.png)
+
+Unstated is a state management library that utilize React Context API, I have not much to say about it because working with it is soo simple, working with it feel like working with React class.
+
+You would be happy to use Unstated if you are tired of Redux boiler plate, I recommend this library, it really deserves more attention.
