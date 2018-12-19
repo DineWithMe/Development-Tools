@@ -67,7 +67,7 @@ Here is an article I wrote on how to redux some times ago:
 
 Summarize on how redux work
 
-1, so first thing first, redux has nothing to do with react, despite the name sound is similar you can use redux in anywhere, react-redux library is the library that blend them together.
+1, so first thing first, redux has nothing to do with react, despite the name sound similar you can use redux in anywhere, react-redux library is the library that blend them together.
 
 2, in big picture store replace your state, action(or precisely action function) replace the method, reducer become the method that handle only the state change
 
