@@ -60,6 +60,24 @@ e.zeit.world	46.31.237.1	2600:180b:5001::1
 f.zeit.world	43.247.171.1	2600:180c:6001::1
 ```
 
+Various registrar has different but in general the same logic to how to change domain's DNS, this example uses Namecheap,
+![](./img/CustomeDNS.png)
+
+You also need to reflect the DNS for Namecheap Private Email by setting these DNS records:
+
+```
+now dns add dinewithme.app @ MX mx1.privateemail.com 10
+now dns add dinewithme.app @ MX mx2.privateemail.com 10
+now dns add dinewithme.app @ TXT 'v=spf1 include:spf.privateemail.com ~all'
+```
+
+read more at:  
+https://www.namecheap.com/support/knowledgebase/article.aspx/767/10/how-to-change-dns-for-a-domain
+
+https://www.namecheap.com/support/knowledgebase/article.aspx/1340/2176/namecheap-private-email-records-for-domains-with-thirdparty-dns
+
+https://zeit.co/blog/now-dns
+
 ## 4. Deployment
 
 create a npm scripts and run it
