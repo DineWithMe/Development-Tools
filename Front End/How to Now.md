@@ -60,7 +60,7 @@ e.zeit.world	46.31.237.1	2600:180b:5001::1
 f.zeit.world	43.247.171.1	2600:180c:6001::1
 ```
 
-Various registrar has different but in general the same logic to how to change domain's DNS, this example uses Namecheap,
+Various registrars has different but in general the same logic on how to change domain's DNS, this example demonstrates Namecheap,
 ![](./img/CustomeDNS.png)
 
 You also need to reflect the DNS for Namecheap Private Email by setting these DNS records:
