@@ -38,6 +38,19 @@ I prefer cleaner root directory so instead of now.json, I configure Now in packa
   }
 ```
 
+you can also combine "dotenv" and "env" json properties by moving all environment variable of "env" into the dotenv file, I recommend this because it will not expose you configurations and secret in your package.json which you need to upload to github
+
+```
+  "now": {
+    "version": 2,
+    "name": "MyAppName",
+    "dotenv": ".env file path",
+    "alias":"mydomain"
+  }
+```
+
+Finally it will looks like this.
+
 read more at:  
 https://zeit.co/blog/now-json
 
