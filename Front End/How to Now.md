@@ -30,7 +30,7 @@ I prefer cleaner root directory so instead of now.json, I configure Now in packa
   "now": {
     "version": 2, // if you have problem deploying in Now 2.0, you can deploy it in version 1
     "name": "MyAppName",
-    "dotenv": ".env file path",
+    "dotenv": ".env file path", // read environment variable from dotenv file
     "env": {
       "NODE_ENV": "production" // exclude dev-dependency from installation, this also mean that you might want to install some dev-dependency as dependency if you rely on them in npm scripts "build" and "start" because Now use these two scripts to build and start
     },
