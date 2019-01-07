@@ -28,7 +28,7 @@ const func = (userData) = {
   }
 }
 
-the later would have much more flexibility plus the cost of conversion to later is small and only one time.
+the later would have much more flexibility plus the cost of conversion from former to later is small and is only one time.
 ```
 
 ## Modular Function
@@ -45,7 +45,7 @@ Sure you can use code editor search and replace utility but that is a dangerous 
 
 Object property is place where many thing can go wrong because of mistype, apply a constant to the accessor can prevent this type of problem.
 
-With constant you can also easily share it within back end and front end because object is heavily involve in api.
+With constant you can also easily share it within back end and front end because object is heavily involved in api.
 
 ## default case must not be "default" if possible
 
@@ -63,7 +63,7 @@ if (status==='failed'){
 
 now imagine in future there would be another status = 'retest', you would also send this to customer.
 
-Of course you can modify the code to something like
+Of course you can modify the code to something like this:
 
 ```
 const status = 'pass'
@@ -79,4 +79,27 @@ which is much safer, you still discard the retest unit but better than sending p
 
 However we are talking about such mistake in general and how to close the possibility of such mistake.
 
-If possible we should take care as much case as possible, and the default case should alert the developer there is a not take-care.
+If possible we should take care as much cases as possible, and the default case should alert the developer that there is a not taken care case.
+
+## Do not use environment variable as condition for case
+
+consider this code:
+
+```
+if (process.env.ENV === 'production'){
+  port = 3000
+} else if (process.env.ENV === 'development'){
+  port = 4000
+}
+```
+
+now imagine you have another new EVN value "pre-staging", what you need to do is change the code, this is not safe because you may forget to change all the related codes.
+
+a recommended way to do so is, create different dotenv file for each and change your code to:
+
+```
+port = process.env.PORT
+```
+
+with this, your code is lesser and consistent across all the environment,
+furthermore you can quickly identify whether the problem is come from code or environment variable when behavior is not the same for different environment.
