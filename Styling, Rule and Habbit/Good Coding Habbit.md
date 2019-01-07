@@ -46,3 +46,37 @@ Sure you can use code editor search and replace utility but that is a dangerous 
 Object property is place where many thing can go wrong because of mistype, apply a constant to the accessor can prevent this type of problem.
 
 With constant you can also easily share it within back end and front end because object is heavily involve in api.
+
+## default case must not be "default" if possible
+
+consider this code:
+
+```
+const status = 'pass'
+
+if (status==='failed'){
+  discard()
+} else {
+  sendToCustomer()
+}
+```
+
+now imagine in future there would be another status = 'retest', you would also send this to customer.
+
+Of course you can modify the code to something like
+
+```
+const status = 'pass'
+
+if (status==='pass'){
+  sendToCustomer()
+} else {
+  discard()
+}
+```
+
+which is much safer, you still discard the retest unit but better than sending possible defect unit to customer.
+
+However we are talking about such mistake in general and how to close the possibility of such mistake.
+
+If possible we should take care as much case as possible, and the default case should alert the developer there is a not take-care.
