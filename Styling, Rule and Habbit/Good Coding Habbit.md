@@ -9,7 +9,7 @@ consider these two piece of codes
 ```
 const func = ({name, age, occupation}) = {
   userStatus = {
-    maturity: age > 18 ? 'adult' : 'kid'
+    maturity: age > 18 ? 'adult' : 'not adult'
     name,
     age,
     occupation
@@ -23,7 +23,7 @@ and
 const func = (userData) = {
   const { name, age, occupation } = userData
   userStatus = {
-    maturity: age > 18 ? 'adult' : 'kid'
+    maturity: age > 18 ? 'adult' : 'not adult'
     ...userData
   }
 }
