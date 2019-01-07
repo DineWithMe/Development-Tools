@@ -28,8 +28,9 @@ const func = (userData) = {
   }
 }
 
-the later would have much more flexibility plus the cost of conversion from former to later is small and is only one time.
 ```
+
+the later would have much more flexibility plus the cost of conversion from former to later is small and is only one time.
 
 ## Modular Function
 
