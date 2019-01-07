@@ -95,13 +95,15 @@ So, should we keep unused argument? I have no clear answer for this,
 
 Personally I am more incline to remove the unused argument but I am also willing to keep them for the sake of explicitly.
 
-2. **Styling and rule, especially styling, is not as important as people think it is.**
+2. **Styling, is not as important as people think it is.**
 
-Styling and rule are preferences, and most of the time people think their preference is important, But in reality it is not. Yes a good styling/rule definitely help, but to what extend? how much it improves your workflow? 10%? 5%? 0.5%? Is it worth your time?
+Styling are preferences, and most of the time people think their preference is important, But in reality it is not. Yes a good styling/rule definitely help, but to what extend? how much it improves your workflow? 10%? 5%? 0.5%? Is it worth your time?
 
-When come to styling/rule, it is not about who has the best styling and code, it is about consistency across the team, we need to make sure everyone use the same style and code so that in long term they can understand each other code easier(when they get used to the rule and styling).
+When come to styling, it is not about who has the best styling and code, it is about consistency across the team, we need to make sure everyone use the same style and code so that in long term they can understand each other code easier when they get used to the styling).
 
-Actually the good styling/rule and consistency are not conflicting each other, because why not both? So an easy solution for this is to install tools that enforce the good styling/rule.
+Actually the good styling and consistency are not conflicting each other, because why not both? So an easy solution for this is to install tools that enforce the good styling.
+
+Rule on the other hand could be important, the potential of rule to prevent bug is much higher than styling.
 
 So just take some time to pick a rule/styling and enforce it, that is all.
 
