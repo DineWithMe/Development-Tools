@@ -146,7 +146,6 @@ Recommended setting:
 "editor.tabSize": 2,  
 "editor.formatOnSave": true,  
 "editor.formatOnSaveTimeout": 5000,  
-"javascript.preferences.quoteStyle": "single",  
 "prettier.eslintIntegration": true,  
 "prettier.singleQuote": true,  
 "prettier.jsxSingleQuote": true,  
