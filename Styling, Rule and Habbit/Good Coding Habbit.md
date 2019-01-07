@@ -101,5 +101,5 @@ a recommended way to do so is, create different dotenv file for each and change 
 port = process.env.PORT
 ```
 
-with this, your code is lesser and consistent across all the environment,
+with this, your code is lesser and consistent across all the environment, you dont need to change code for every environment
 furthermore you can quickly identify whether the problem is come from code or environment variable when behavior is not the same for different environment.
