@@ -1,6 +1,6 @@
-# Habbit
+# Habit
 
-Habbit is actually a rule which not able to translate into linter yet.
+Habit is actually a rule which not able to translate into linter yet.
 
 ## Do not destructuring the parameter
 
