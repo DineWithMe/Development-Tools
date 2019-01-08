@@ -2,7 +2,7 @@
 
 Habit is actually a rule which not able to translate into linter yet.
 
-## Do not destructuring the parameter
+## Keep the parameter
 
 consider these two piece of codes
 
@@ -48,7 +48,7 @@ Object property is place where many thing can go wrong because of mistype, apply
 
 With constant you can also easily share it within back end and front end because object is heavily involved in api.
 
-## default case must not be "default" if possible
+## Minimal cases for "default"
 
 consider this code:
 
@@ -80,9 +80,11 @@ which is much safer, you still discard the retest unit but better than sending p
 
 However we are talking about such mistake in general and how to close the possibility of such mistake.
 
-If possible we should take care as much cases as possible, and the default case should alert the developer that there is a not taken care case.
+We should take care as much cases as possible, and the default case should alert the developer that there is a not taken care case.
 
-## Do not use environment variable as condition for case
+The less cases default take care of, the safer it is.
+
+## Create more dotenv file rather than environment cases
 
 consider this code:
 
@@ -104,3 +106,9 @@ port = process.env.PORT
 
 with this, your code is lesser and consistent across all the environment, you dont need to change code for every environment
 furthermore you can quickly identify whether the problem is come from code or environment variable when behavior is not the same for different environment.
+
+For some case, you need extra trick like parsing, for example when you need an array for your environment variable.
+
+## Pure function
+
+If allowed, make pure function, this make testing easier.
