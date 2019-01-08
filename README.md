@@ -69,7 +69,7 @@ We should cultivate devOps culture as soon as possible, from planning, building,
 | Version Control        | Git                      | https://git-scm.com/    |
 | Repository             | Github                   | https://github.com/     |
 
-\*not yet finalize, may switch but CircleCI seems convenience enough, ultimately it depends on the cost  
+\*not yet finalize, may switch to Jenkin but CircleCI seems convenience enough, ultimately it depends on the cost  
 \*\*in term of cost i recommend DO(Digital Ocean), it is more flexible but more manual work, require technical knowledge in Ubuntu
 
 ## Rule and Styling
