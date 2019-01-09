@@ -24,17 +24,19 @@ https://zeit.co/docs/v1/clients/now-cli/
 
 ## 2. Create a add a "now" key in package.json
 
+**Using Now version 1**
+
 I prefer cleaner root directory so instead of now.json, I configure Now in package.json, all the properties is optional
 
 ```
   "now": {
-    "version": 2, // if you have problem deploying in Now 2.0, you can deploy it in version 1
+    "version": 1,
     "name": "MyAppName",
     "dotenv": ".env file path", // read environment variable from dotenv file
     "env": {
       "NODE_ENV": "production" // exclude dev-dependency from installation, this also mean that you might want to install some dev-dependency as dependency if you rely on them in npm scripts "build" and "start" because Now use these two scripts to build and start
     },
-    "alias":"mydomain" // when you run "now alias" command after deployment, it will pick up this alias key's value as argument
+    "alias":"MyDomainName" // when you run "now alias" command after deployment, it will pick up this alias key's value as argument
   }
 ```
 
@@ -45,7 +47,7 @@ you can also combine "dotenv" and "env" json properties by moving all environmen
     "version": 2,
     "name": "MyAppName",
     "dotenv": ".env file path",
-    "alias":"mydomain"
+    "alias":"MyDomainName"
   }
 ```
 
@@ -59,6 +61,33 @@ https://zeit.co/docs/v1/features/build-env-and-secrets/
 https://zeit.co/docs/v1/features/env-and-secrets/
 
 https://zeit.co/docs/v1/features/configuration/
+
+**Using Now version 2**
+
+Now version 2 has more restrictions on now.json file:
+
+- we must create a now.json in root directory, you can no longer define it in package.json.
+- we are not allow to use dotenv file, making injecting environment variable less flexible.
+
+here is how your now.json should look like:
+
+```
+  "version": 2,
+  "name": "MyAppName",
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "alias": "MyDomainName",
+  "env": {
+    "secret":secret
+  }
+```
+
+read more at:
+https://github.com/zeit/now-examples/tree/master/nextjs
 
 ## 3. Custom domain name
 
