@@ -2,13 +2,15 @@
 
 Why the free, open source, rich functionalities VS Code?
 
-It has source control integrated, allows you to add, commit, and push in few clicks. Not to mention the built in terminal, I simply cant live without it.
+It has source control integrated, allows you to add, commit, and push in few clicks. The built in terminal is also amazing, a huge convenience plus.
 
 VS Code is highly polished, it brings great user experience and is getting better and better with each update. It feels so good just by typing on it.
 
+With open source comes great community, with great community comes great extensions, most extensions listed were compared to alternatives in term of functionality, popularity and ease of use.
+
 Although it consume much higher memory resource, but since modern computer normally has 8GB ram or above, it is more than enough to handle it.
 
-With open source comes great community, with great community comes great extensions, most extensions listed were compared to alternatives in term of functionality, popularity and ease of use.
+As one of the most contributed project on github, I strongly believe VS code will become better and better in future.
 
 I choose what I believe is the best, you are free to have your own options, you should be able to find similar extension in your favorite editor.
 
