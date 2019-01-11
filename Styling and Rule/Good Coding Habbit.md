@@ -58,7 +58,7 @@ We should take care as much cases as possible, and the default case should alert
 
 The less cases default take care of, the safer it is.
 
-I think the ideal solution is to have a enum case where it forces you to fill all the case for every item, but currently js does not support enum.
+I think the ideal solution is to have a enum case where it forces us to fill all the case for every item and throw compilation error if we do not do so, but currently js does not support enum.
 
 ## Create more dotenv file rather than environment cases
 
@@ -87,7 +87,7 @@ For some case, you need extra trick like parsing, for example when you need an a
 
 ## Keep the parameter
 
-consider these two piece of codes
+consider these two piece of codes:
 
 ```
 const func = ({name, age, occupation}) = {
@@ -114,3 +114,28 @@ const func = (userData) = {
 ```
 
 the later would have much more flexibility plus the cost of conversion from former to later is small and is only one time.
+
+## Object as Parameter
+
+Consider these two pieces of codes:
+
+```
+const floatingPoint = (denominator, numerator)=>{
+  return numerator/denominator
+}
+floatingPoint(4,5)
+floatingPoint(5,4)
+```
+
+```
+const floatingPoint = (fraction)=>{
+  const { denominator, numerator } = fraction
+  return numerator/denominator
+}
+floatingPoint({ denominator: 4, numerator: 5 })
+floatingPoint({ numerator: 5, denominator: 4 })
+```
+
+In this case we want to look for floating point of 4/5, if we use the first code, we have higher chance of confusing our self when assigning values to arguments.
+
+The 2nd code greatly reduce such error although it require more typing.
