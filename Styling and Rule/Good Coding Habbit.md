@@ -2,35 +2,9 @@
 
 Habit is actually a rule which not able to translate into linter yet.
 
-## Keep the parameter
+## Pure function
 
-consider these two piece of codes
-
-```
-const func = ({name, age, occupation}) = {
-  userStatus = {
-    maturity: age > 18 ? 'adult' : 'not adult'
-    name,
-    age,
-    occupation
-  }
-}
-```
-
-and
-
-```
-const func = (userData) = {
-  const { name, age, occupation } = userData
-  userStatus = {
-    maturity: age > 18 ? 'adult' : 'not adult'
-    ...userData
-  }
-}
-
-```
-
-the later would have much more flexibility plus the cost of conversion from former to later is small and is only one time.
+If allowed, make pure function, this make testing easier.
 
 ## Modular Function
 
@@ -84,6 +58,8 @@ We should take care as much cases as possible, and the default case should alert
 
 The less cases default take care of, the safer it is.
 
+I think the ideal solution is to have a enum case where it forces you to fill all the case for every item, but currently js does not support enum.
+
 ## Create more dotenv file rather than environment cases
 
 consider this code:
@@ -109,6 +85,32 @@ furthermore you can quickly identify whether the problem is come from code or en
 
 For some case, you need extra trick like parsing, for example when you need an array for your environment variable.
 
-## Pure function
+## Keep the parameter
 
-If allowed, make pure function, this make testing easier.
+consider these two piece of codes
+
+```
+const func = ({name, age, occupation}) = {
+  userStatus = {
+    maturity: age > 18 ? 'adult' : 'not adult'
+    name,
+    age,
+    occupation
+  }
+}
+```
+
+and
+
+```
+const func = (userData) = {
+  const { name, age, occupation } = userData
+  userStatus = {
+    maturity: age > 18 ? 'adult' : 'not adult'
+    ...userData
+  }
+}
+
+```
+
+the later would have much more flexibility plus the cost of conversion from former to later is small and is only one time.
