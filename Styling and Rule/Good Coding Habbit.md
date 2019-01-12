@@ -10,6 +10,10 @@ If allowed, make pure function, this make testing easier.
 
 Create modular function for any code that you use more than once to improve code cleanness and maintainability.
 
+## Export at Index File
+
+For every folder, create a index file that import all the exported functions in the folder and export with that index file. This is make importing much cleaner because you only import one file(index file) for every folder.
+
 ## String and Number Constant
 
 Create string or number constant for any string or number that you use more than once.
