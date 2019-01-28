@@ -59,8 +59,6 @@ But I believe I will found a use case when the application get complicated so I 
 
 ## Nodejs
 
-![](./img/nodejs.jpg)
-
 I am unaware of Nodejs performance benefit compare to other server, however I do aware that Javascript is not so tasteful when come to speed.
 
 The reason I use Nodejs is straight and simple, it provides faster development and better developer experience as it use the same language in front end.
@@ -68,8 +66,6 @@ The reason I use Nodejs is straight and simple, it provides faster development a
 We dont need to learn extra language and install whole set of text editor extensions for back end, it make full stack developer life easier.
 
 ## GraphQL-Yoga
-
-![](./img/graphql_yoga.png)
 
 Yoga is a GraphQL server framework which consist of Apollo Server and Express, since this project is utilizing GraphQL end point and the world is dominate by REST api so it is natural choice to use this framework.
 
