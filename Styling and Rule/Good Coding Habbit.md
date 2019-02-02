@@ -143,3 +143,97 @@ floatingPoint({ numerator: 5, denominator: 4 })
 In this case we want to look for floating point of 4/5, if we use the first code, we have higher chance of confusing our self when assigning values to arguments.
 
 The 2nd code greatly reduce such error although it require more typing.
+
+## Circular Referencing Solution
+
+imagine such case:
+
+```
+const a  = {
+    val: 'a',
+    neighbor: d
+}
+
+const b = {
+    val: 'b',
+    neighbor: a
+}
+
+
+const c = {
+    val: 'c',
+    neighbor: b
+}
+
+const d = {
+    val: 'd',
+    neighbor: c
+}
+
+
+console.log( 'd: neighbor - > ' , d.neighbor )
+console.log( 'a: neighbor - > ' , a.neighbor )
+```
+
+obviously the code wont work, as `d` is not yet defined when `a` try to access it.
+
+A quit solution for this is by using eval():
+
+```
+const a  = {
+    val: 'a',
+    neighbor: "d"
+}
+
+const b = {
+    val: 'b',
+    neighbor: "a"
+}
+
+
+const c = {
+    val: 'c',
+    neighbor: "b"
+}
+
+const d = {
+    val: 'd',
+    neighbor: "c"
+}
+
+
+console.log( 'd: neighbor - > ' , eval(d.neighbor) )
+console.log( 'a: neighbor - > ' , eval(a.neighbor) )
+```
+
+However eval() is evil https://stackoverflow.com/questions/86513/why-is-using-the-javascript-eval-function-a-bad-idea
+
+So a better way is to change the code structure and use property accessor:
+
+```
+const neighborhood = {
+    a: {
+        val: 'a',
+        neighbor: 'd',
+    },
+
+    b: {
+        val: 'b',
+        neighbor: 'a',
+    },
+
+    c: {
+        val: 'c',
+        neighbor: 'b',
+    },
+
+    d: {
+        val: 'd',
+        neighbor: 'c',
+    },
+}
+console.log( 'd: neighbor - > ' , neighborhood[neighborhood.d.neighbor] )
+console.log( 'a: neighbor - > ' , neighborhood[neighborhood.a.neighbor] )
+```
+
+this solution is more verbose but definitely safer than eval()
