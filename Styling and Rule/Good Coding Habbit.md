@@ -62,7 +62,7 @@ We should take care as much cases as possible, and the default case should alert
 
 The less cases default take care of, the safer it is.
 
-I think the ideal solution is to have a enum case where it forces us to fill all the case for every item and throw compilation error if we do not do so, but currently js does not support enum.
+I think the ideal solution is to have a enum case where it forces us to fill all the case for every item and throw compilation error if we do not do so, but currently js does not support "enum case".
 
 ## Create more dotenv file rather than environment cases
 
