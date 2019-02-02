@@ -254,3 +254,11 @@ VSCode extension for GraphQL schema authoring & consumption.
 ![](./img/GraphQLforVSCode.3.gif)
 
 Comment: Syntax highlighting
+
+## Color Highlight
+
+_naumovs.color-highlight_
+
+Highlight web colors in your editor
+
+Comment: well, although vs code come with color picker in your css, but this extension has better highlighting, plus it work well with Sass color variable.
