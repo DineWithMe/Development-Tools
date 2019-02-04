@@ -4,7 +4,7 @@ Depend on a lot of factors and needs, libraries will change from time to time.
 
 Here is simple justification of important library that we are going to use.
 
-## 1. React
+## React
 
 ![](./img/React.jpeg)
 
@@ -24,14 +24,18 @@ But why react? Because there are also library that adopt or gravitate toward com
 
 Again my answer for this is quite simple: stable and reputed, it is a safe choice.
 
-- More job opportunities, it is easier to get people to join this project especially fot those who want to gain experience.
-- It has big ecosystem, resourceful, lots of library created around react.
-- Big ecosystem also means, technical problems that you encountered are most likely answered on internet.
-- It developed by big company, it will last longer.
+-   More job opportunities, it is easier to get people to join this project especially fot those who want to gain experience.
+-   It has big ecosystem, resourceful, lots of library created around react.
+-   Big ecosystem also means, technical problems that you encountered are most likely answered on internet.
+-   It developed by big company, it will last longer.
+
+Another thing I want to bring up is the different between React Component Render and React DOM Render, which I believe is not properly explain to newbie when they learn React.
+
+React Component Render simply update the React Component when state change, it does not really render the DOM while the other hand React DOM Render render DOM element(it will compare new and old virtual DOM and only mutate what is changed).
 
 If I would pick up another library, I think Vue is a good choice and Imba is very interesting tech to keep eye on.
 
-## 2. Next
+## Next
 
 ![](./img/Next.png)
 
@@ -53,33 +57,7 @@ Looking for static page generator? Next also can export static file.
 
 Other than Next, Gatsby is extremely attractive option is you want static page, it is blazing fast, I strongly recommend it but somehow tricky to render dynamic content with Gatsby(I dont have much research yet); speaking about After, After is fairly new and heavily inspired by Next, the different is After adopt different routing philosophy (which Next will adopt too).
 
-## 3. Redux
-
-_this paragraph is deprecated, now we use Unstated but keep this for the purpose of reading_
-
-![](./img/Redux.png)
-
-There are a lot of state management library out there, but I dont have much experience to comment on all of them.
-
-Redux it self is great, but it could be confusing for new learner, I think redux has too much code to do simple thing, not to mention you need middleware to handle async action, adding complexity.
-
-Here is an article I wrote on how to redux some times ago:
-
-Summarize on how redux work
-
-1, so first thing first, redux has nothing to do with react, despite the name sound similar you can use redux in anywhere, react-redux library is the library that blend them together.
-
-2, in big picture store replace your state, action(or precisely action function) replace the method, reducer become the method that handle only the state change
-
-3, action and reducer are both related to store, they must have a store to work with, however action does not directly relate to reducer, you dont need to specify which action trigger which reducer, the reason is simple, any action will trigger all the reducers(because you combine all the reducers) and execute any match case if available.
-
-4, store dispatch the action, in plain english, it use the information from 'action' and tell every reducers what to do, basically just two type of info, which case(action.type) and what state(action.payload).
-
-5, after reducers finish their job, they return all the states to store.
-
-Redux is what most people familiar with plus it play well with Next so I will stick with it for now, but tiny library like Unstated and Meiosis seem worth considering too.
-
-## 4. Now
+## Now
 
 ![](./img/Now.png)
 
@@ -91,12 +69,73 @@ This means a lot for sole developer which is just impossible to micromanage ever
 
 Now make your life a breeze but of course Now is not the only serverless out there, there are Heroku, Cloudflare, Digital Ocean, Hostgator and big names like IBM, Google, Microsoft and Amazon but none of it is as easy as Now when come to deploying Node app, the closest one would be Heroku.
 
-Extra: Now and Next are actually developed by the same company, Zeit.
+Extra: Now and Next are developed by the same company, Zeit.
+
+## Redux
+
+_this paragraph is deprecated, now we use Unstated but keep this for the purpose of reading_
+
+![](./img/Redux.png)
+
+Dealing with state can be complicated, by nature it is a simple thing, it is just a state, an variable/object that hold any kind of information, be it input/properties/status/data.
+
+However when come to complex application where everything is complicated, state management can be even more frustrating, it is not hard to imagine a state change that chain another state change and each state change manipulate the UI/component in their own way which is not easy for developer to track, and the result is a one hell mess.
+
+Hence people come out with modern state management library like Redux, where there is one source of truth: the "store", an centralized object that store all the state. And there is only one way (principally speaking) to change the state, that is by using a list of pure functions with no side effect (principally speaking). And to trigger reducer is depend on a list of what we do, known as "action".
+
+action(from user) -> reducer -> store -> update ui
+
+To put it simple:
+
+1. Store is centralized, so that every container can read it.
+2. Only reducer(which trigger by action) can write the state, the state change is predictable.
+
+This greatly increase the debugging capability of the state, the flow of state is clearer(uni-direction), we know exactly what state will change when certain action is carried out, and after the state change, we can expect what final output display on the UI.
+
+Summarize on how Redux work:
+
+1, so first thing first, redux has nothing to do with react, despite the name sound similar you can use redux in anywhere, react-redux library is the library that blend them together.
+
+2, in big picture store replace your state, action(or precisely action function) replace the method, reducer become the method that handle only the state change
+
+3, action and reducer are both related to store, they must have a store to work with, however action does not directly relate to reducer, you dont need to specify which action trigger which reducer, the reason is simple, any action will trigger all the reducers(because you combine all the reducers) and execute any match case if available.
+
+4, store dispatch the action, in plain english, it use the information from 'action' and tell every reducers what to do, basically just two type of info, which case(action.type) and what state(action.payload).
+
+5, after reducers finish their job, they return all the states to store.
+
+6. Finally update the UI(connect() do this automatically for you).
+
+This is basically how modern state management works, so the nest question is, do you need it?
+
+You might also realized you can actually do the same thing(but with less efficiency) if you just simply use the top most parent component state as single source of truth, then create a not so pure function method that update the state and view (which is setState), passing down the top parent ref to every descendant and everyone can update the state when they need it.
+
+There are two problem with this approach:
+
+1. You need to pass down top parent ref to every descendant, container by container which is easy to do but hassle.
+2. Every time state change happen, setState re-render top parent component, as you know, parent will also render child component which mean all the component get re-rendered.
+
+With Redux library you dont need to manually pass down the store, this is a plus point and you can narrow down what you can choose to render because only what is connected get rendered.
+
+Still, I believe React without Redux is still a viable choice because:
+
+1. Redux has high learning curve.
+2. Redux is not simple enough as a "easy" state management library.
+
+Redux or not? Well, continue the reading.
 
 ## Unstated
 
 ![](./img/Unstated.png)
 
-Unstated is a state management library that utilize React Context API, I have not much to say about it because it is soo simple, working with it simply feel like working with React class.
+If you dont like complexity of Redux but still want to have similar benefit then Unstated is a new breeze you looking for.
+
+Unstated is a state management library that utilize the no longer experimental React Context API, it is soo simple, working with it simply feel like working with React class.
+
+It is soo simple that it has no hype, but it is a legit Redux replacement for React.(Do note that Unstated only work in React while Redux is a javascript state management that works everywhere in javascript).
 
 You would be happy to use Unstated if you are tired of Redux boiler plate, I recommend this library, it really deserves more attention.
+
+Currently it dont have much middleware but we can expect more from the future as the community grows.
+
+Another state library that is really simple is Meiosis.
