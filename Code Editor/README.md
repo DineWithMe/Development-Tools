@@ -261,4 +261,4 @@ _naumovs.color-highlight_
 
 Highlight web colors in your editor
 
-Comment: well, although vs code come with color picker in your css, but this extension has better highlighting, plus it work well with Sass color variable.
+Comment: well, although vs code come with color picker in your css, but this extension is better when come to highlighting, plus it works well with Sass color variable.
