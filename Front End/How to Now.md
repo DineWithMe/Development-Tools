@@ -108,9 +108,9 @@ Various registrars has different but in general the same logic on how to change 
 You also need to reflect the DNS for Namecheap Private Email by setting these DNS records:
 
 ```
-now dns add dinewithme.app @ MX mx1.privateemail.com 10
-now dns add dinewithme.app @ MX mx2.privateemail.com 10
-now dns add dinewithme.app @ TXT 'v=spf1 include:spf.privateemail.com ~all'
+now dns add MyDomainName @ MX mx1.privateemail.com 10
+now dns add MyDomainName @ MX mx2.privateemail.com 10
+now dns add MyDomainName @ TXT 'v=spf1 include:spf.privateemail.com ~all'
 ```
 
 read more at:  
