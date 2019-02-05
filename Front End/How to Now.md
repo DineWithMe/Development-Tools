@@ -72,7 +72,7 @@ Now version 2 has more restrictions on now.json file:
 here is how your now.json should look like:
 
 ```
-  "version": 1,
+  "version": 2,
   "name": "MyAppName",
   "builds": [
     {
