@@ -125,7 +125,7 @@ https://zeit.co/blog/now-dns
 create a npm scripts and run it
 
 ```
-"deploy": "now && now alias && now alias"
+"deploy": "now && now alias"
 ```
 
 Note: you can use shorthand `now alias` instead of `now alias mydomain` if you defined your alias name in package.json
