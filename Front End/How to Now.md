@@ -66,13 +66,13 @@ https://zeit.co/docs/v1/features/configuration/
 
 Now version 2 has more restrictions on now.json file:
 
-- we must create a now.json in root directory, you can no longer define it in package.json.
-- we are not allow to use dotenv file, making injecting environment variable less flexible.
+-   we must create a now.json in root directory, you can no longer define it in package.json.
+-   we are not allow to use dotenv file, making injecting environment variable less flexible.
 
 here is how your now.json should look like:
 
 ```
-  "version": 2,
+  "version": 1,
   "name": "MyAppName",
   "builds": [
     {
