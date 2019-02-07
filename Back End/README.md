@@ -59,11 +59,13 @@ But I believe I will found a use case when the application get complicated so I 
 
 ## Nodejs
 
-I am unaware of Nodejs performance benefit compare to other server, however I do aware that Javascript is not so tasteful when come to speed.
-
 The reason I use Nodejs is straight and simple, it provides faster development and better developer experience as it use the same language in front end.
 
 We dont need to learn extra language and install whole set of text editor extensions for back end, it make full stack developer life easier.
+
+Because Nodejs is small and light weight, it is very suitable for building micro service and deploy with Docker.
+
+The most serious drawback is Nodejs is single threaded, this limit it to handle complicated request.
 
 ## GraphQL-Yoga
 
