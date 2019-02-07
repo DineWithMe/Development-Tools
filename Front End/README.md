@@ -142,7 +142,7 @@ Another state library that is really simple is Meiosis.
 
 ## CSS in JS
 
-![](./img/"css in js.png")
+![](./img/CSS-in-JS.png)
 
 This is a very controversial topic just like when JSX was first introduced. After few weeks working with Styled Component and JSS, I come to conclusion that CSS in JS is a legit alternative to CSS in CSS.
 
