@@ -158,4 +158,4 @@ CSS in JS does come with some drawback, it has some performance overhead, it inc
 
 Still the developer experience, easier code maintenance and faster prototyping outweigh the draw back. Plus it is still in rapid development so we can expect a better future.
 
-\*we cannot claim injection attack is why CSS is better than CSS in JS, no it is not, because this is a security issue that come with flexibility that conventional CSS do not have at all in the first place plus you can disallow this to happen at all by just dont let the user input the data. And remember always sanitize your user input, be it CSS in JS or database query or anything else!)
+\*we cannot claim injection attack is why CSS is better than CSS in JS, no it is not, because this is a security issue that come with flexibility that conventional CSS do not have at all in the first place plus you can disallow this to happen at all by just dont let the user input the data. And remember always sanitize your user input, be it CSS in JS or database query or anything else!
