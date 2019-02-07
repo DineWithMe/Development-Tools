@@ -142,6 +142,8 @@ Another state library that is really simple is Meiosis.
 
 ## CSS in JS
 
+![](./img/"css in js.png")
+
 This is a very controversial topic just like when JSX was first introduced. After few weeks working with Styled Component and JSS, I come to conclusion that CSS in JS is a legit alternative to CSS in CSS.
 
 The most obvious benefit is local scoping, we no longer need to worry about global class name. Think about it, how many time you try to debug the conflicting class name or worrying about conflicting, how much time you spend on class specificity and order?
