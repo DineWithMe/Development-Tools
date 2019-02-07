@@ -139,3 +139,23 @@ You would be happy to use Unstated if you are tired of Redux boiler plate, I rec
 Currently it dont have much middleware but we can expect more from the future as the community grows.
 
 Another state library that is really simple is Meiosis.
+
+## CSS in JS
+
+This is a very controversial topic just like when JSX was first introduced. After few weeks working with Styled Component and JSS, I come to conclusion that CSS in JS is a legit alternative to CSS in CSS.
+
+The most obvious benefit is local scoping, we no longer need to worry about global class name. Think about it, how many time you try to debug the conflicting class name or worrying about conflicting, how much time you spend on class specificity and order?
+
+Yes I know there is methodology like BEM to solve the issue, but again how many time you spend on naming? Should this one be block, should this one be element, should this one be modifier?
+
+Worst, BEM is pseudo encapsulation, it doesn't solve the on architecure level, you still can conflict your class name if you are not be careful or you import another CSS. Naming is already hard, managing name is worse.
+
+With CSS in JS, we would eliminated those problems almost entirely we can design a very modular style sheet. Other than that dynamic theming dynamic and CSS properties is thing that you can easily enjoy with CSS in JS.
+
+CSS in JS introduce us component way of doing styling just like JSX introduce us component way of doing html, separation of concerns is not separation of technologies!
+
+CSS in JS does come with some drawback, it has some performance overhead, it increase the size of your code, harder to query class name(the class name is unique hash), its dynamic capabilities open up to injection attack\*.
+
+Still the developer experience, easier code maintenance and faster prototyping outweigh the draw back. Plus it is still in rapid development so we can expect a better future.
+
+\*we cannot claim injection attack is why CSS is better than CSS in JS, no it is not, because this is a security issue that come with flexibility that conventional CSS do not have at all in the first place plus you can disallow this to happen at all by just dont let the user input the data. And remember always sanitize your user input, be it CSS in JS or database query or anything else!)
