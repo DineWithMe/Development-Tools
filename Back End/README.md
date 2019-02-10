@@ -27,7 +27,7 @@ Here is what JWT conventionally cannot offer but has work around:
 
 1. It is not automatically included in every request like cookie, we need to manually set it in Authorization header.
 
-And This is bad for server side rendering, without automatic inclusion, we cannot render initial page with user data.
+And this is bad for server side rendering, without automatic inclusion, we cannot render initial page with user data.
 
 Solution: Simply set the JWT as cookie, whether JWT or cookie, they are just a string that can be automatically included in request cookie.
 
@@ -37,7 +37,7 @@ Solution: Then just add it to your database, like how you store cookie on your s
 
 Some might argue, the work around just make JWT a cookie, so why not just use cookie in the first place?
 
-The answer is simple, JWT has more flexibility, let say if you want to switch from JWT to cookie, you can do it easily by implementing above work around. But if you want to switch from cookie to JWT, you need to change more code.
+Well, the answer is simple, JWT can at least store public information.
 
 JWT can do what cookie do, but cookie cannot do what JWT can do.
 
