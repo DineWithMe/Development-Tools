@@ -84,28 +84,31 @@ For example:
 
 I will not keep the semicolon for 2 reasons:
 
-- it is the source of syntax error if we forgot to remove it.
-- With or without it, it doesn't provide any meaningful explicit information.
+-   it is the source of syntax error if we forgot to remove it.
+-   With or without it, it doesn't provide any meaningful explicit information.
 
 So, should we keep unused argument? I have no clear answer for this,
 
-- removing unused argument make the code cleaner.
-- But keeping it explicitly tell the newcomer or remind the old man what this thing can potentially do at the first glance.
-- However you can always refer to the documentation.
+-   removing unused argument make the code cleaner.
+-   But keeping it explicitly tell the newcomer or remind the old man what this thing can potentially do at the first glance.
+-   However you can always refer to the documentation.
 
 Personally I am more incline to remove the unused argument but I am also willing to keep them for the sake of explicitly.
 
-2. **Styling, is not as important as people think it is.**
+2. **What is a good styling?**
 
-Styling are preferences, and most of the time people think their preference is important, But in reality it is not. Yes a good styling/rule definitely help, but to what extend? how much it improves your workflow? 10%? 5%? 0.5%? Is it worth your time?
+While styling can be very subjective, we still has some clue what a good styling is.
 
-When come to styling, it is not about who has the best styling and code, it is about consistency across the team, we need to make sure everyone use the same style and code so that in long term they can understand each other code easier when they get used to the styling).
+A good styling reduce communication cost, the mental cost of person trying to read the code.
+Is the code too long on a line?
+Is the indentation make sense?
+Can you identify all arguments on first sight?
 
-Actually the good styling and consistency are not conflicting each other, because why not both? So an easy solution for this is to install tools that enforce the good styling.
+etc etc
 
-Rule on the other hand could be important, the potential of rule to prevent bug is much higher than styling.
+These small details make our life easier when we review a code.
 
-So just take some time to pick a rule/styling and enforce it, that is all.
+Yes it might look trivia, but imagine all the time you wasted trying to read codes, it is totally worth to spend some time to enforce styling across the team.
 
 | Code    | Tools    | Website              |
 | ------- | -------- | -------------------- |
