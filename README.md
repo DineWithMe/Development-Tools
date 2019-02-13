@@ -99,11 +99,10 @@ Personally I am more incline to remove the unused argument but I am also willing
 
 While styling can be very subjective, we still has some clue what a good styling is.
 
-A good styling reduce communication cost, the mental cost of person trying to read the code.
-Is the code too long on a line?
-Is the indentation make sense?
-Can you identify all arguments on first sight?
-
+A good styling reduce communication cost, the mental cost of person trying to read the code.  
+Is the code too long on a line?  
+Is the indentation make sense?  
+Can you identify all arguments on first sight?  
 etc etc
 
 These small details make our life easier when we review a code.
