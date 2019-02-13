@@ -177,7 +177,7 @@ console.log( 'a: neighbor - > ' , a.neighbor )
 
 obviously the code wont work, as `d` is not yet defined when `a` try to access it.
 
-A quit solution for this is by using eval():
+A quick solution for this is by using eval():
 
 ```
 const a  = {
