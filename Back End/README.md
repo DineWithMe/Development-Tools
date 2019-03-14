@@ -63,9 +63,15 @@ The reason I use Nodejs is straight and simple, it provides faster development a
 
 We dont need to learn extra language and install whole set of text editor extensions for back end, it make full stack developer life easier.
 
-Because Nodejs is small and light weight, it is very suitable for building micro service and deploy with Docker.
+Because Nodejs is small and light weight, it is very suitable for building micro service and deploy with Docker, it is also easier for front end developer to transcend into back end.
 
 The most serious drawback is Nodejs is single threaded, this limit it to handle complicated request.
+
+Update:
+
+It turns out that using same language with front end is relatively much more important than what previously I think it is. By avoiding adding new language into your tech stack, you avoid adding new programming paradigm and bunch of complexity you dont need.
+
+Another reason is the community and package manager, recently I tried out Python Flask, the very first thing I noticed is, python package manager Pip or Anaconda, utility and user friendly wise are lag behind what Javascript NPM, the back end community is also as vibrant as Javascript community.
 
 ## GraphQL-Yoga
 
