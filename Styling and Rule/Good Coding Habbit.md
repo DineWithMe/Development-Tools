@@ -237,3 +237,37 @@ console.log( 'a: neighbor - > ' , neighborhood[neighborhood.a.neighbor] )
 ```
 
 this solution is more verbose but definitely safer than eval()
+
+## `this` in Object
+
+Consider these tow pieces of code, which is better?
+
+```
+var a = {
+    one() {
+        return 1
+    },
+    plusOne(num) {
+        return this.one() + num
+    },
+}
+```
+
+```
+function one() {
+    return 1
+}
+var a = {
+    one,
+    plusOne(num) {
+        return one() + num
+    },
+}
+```
+
+The answer is the second one is better
+![](img/thisandobj.png)
+because you wont shit yourself when you destructure it,
+in the first case, the `this` become window object after destructuring
+long story short, dont use `this` keyword in object,
+if you have to, use class
