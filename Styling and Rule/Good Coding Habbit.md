@@ -117,7 +117,7 @@ const func = (userData) = {
 
 ```
 
-the later would have much more flexibility plus the cost of conversion from former to later is small and is only one time.
+the second approach is more flexible because it retain variable that reperesent the whole object, this is convenient when you want to console log the whole object or pass the whole object.
 
 ## Object as Parameter
 
