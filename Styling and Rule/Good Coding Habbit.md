@@ -1,10 +1,10 @@
 # Habit
 
-Habit is actually a rule which not able to translate into linter yet.
+Habit is actually rules that not able to translate into linter yet.
 
 ## Pure function
 
-If allowed, make pure function, this make testing easier.
+If possible, make pure function, this make testing easier.
 
 ## Modular Function
 
@@ -25,6 +25,10 @@ Sure you can use code editor search and replace utility but that is a dangerous 
 Object property is place where many thing can go wrong because of mistype, apply a constant to the accessor can prevent this type of problem.
 
 With constant you can also easily share it within back end and front end because object is heavily involved in api.
+
+## Use absolute path
+
+so that we don't need to worry about the path when you copy the import statement to another file or when we move file.
 
 ## Minimal cases for "default"
 
