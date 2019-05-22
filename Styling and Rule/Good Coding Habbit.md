@@ -146,7 +146,7 @@ floatingPoint({ numerator: 5, denominator: 4 })
 
 In this case we want to look for floating point of 4/5, if we use the first code, we have higher chance of confusing our self when assigning values to arguments.
 
-The 2nd code greatly reduce such error although it require more typing, it also have the benefit of [Keep the Parameter]()
+The 2nd code greatly reduce such error although it require more typing, it also have the benefit of [Keep the Parameter](https://github.com/tylim88/Development-101/blob/master/Styling%20and%20Rule/Good%20Coding%20Habbit.md#keep-the-parameter)
 
 ## Circular Referencing Solution
 
