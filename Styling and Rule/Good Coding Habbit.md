@@ -275,3 +275,7 @@ because we wont shit ourself when we destructure it,
 in the first case, the `this` become window object after destructuring
 long story short, don't use `this` keyword in object,
 if we have to, use class
+
+## It is better to import assests in JS then adding it in HTML
+
+https://facebook.github.io/create-react-app/docs/using-the-public-folder
