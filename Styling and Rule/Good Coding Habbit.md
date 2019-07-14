@@ -14,9 +14,9 @@ Create modular function for any code that we use more than once to improve code 
 
 For every folder, create a index file that import all the exported functions in the folder and export with that index file. This is make importing much cleaner because we only import one file(index file) for every folder.
 
-## String and Number Constant
+## Use Constant
 
-Create string or number constant for any string or number that we use more than once.
+Create constant for any value that we use more than once.
 
 Sure we can use code editor search and replace utility but that is a dangerous thing to do, it is safer and more convenience to just create a constant.
 
@@ -29,6 +29,10 @@ With constant we can also easily share it within back end and front end because 
 ## Use Absolute Path
 
 so that we don't need to worry about the path when we copy the import statement to another file or when we move file.
+
+## Don't Include File Extension when Importing
+
+This allow us to freely change the file extension without breaking the import
 
 ## Minimal Cases for "default"
 
@@ -123,7 +127,9 @@ const func = (userData) = {
 
 the second approach is more flexible because it retain variable that represent the whole object, this is convenient when we want to console log the whole object or pass the whole object.
 
-## Object as Parameter
+## Object or Non-Object as Parameter
+
+Object here refer to **object literal**.
 
 Consider these two pieces of codes:
 
@@ -144,9 +150,21 @@ floatingPoint({ denominator: 4, numerator: 5 })
 floatingPoint({ numerator: 5, denominator: 4 })
 ```
 
-In this case we want to look for floating point of 4/5, if we use the first code, we have higher chance of confusing our self when assigning values to arguments.
+In this case we want to look for floating point of 4/5, if we use the first code, we have higher chance of confusing our self when assigning values to arguments, object eliminate the need to remember the order of parameter.
 
-The 2nd code greatly reduce such error although it require more typing, it also have the benefit of [Keep the Parameter](https://github.com/tylim88/Development-101/blob/master/Styling%20and%20Rule/Good%20Coding%20Habbit.md#keep-the-parameter)
+It also easier to skip some paramerters, we can only assign what we want easily.
+
+The two drawback of object as parameter is:
+
+1. object is reference, we may accidentally change all the object.
+2. object name need to be correct.
+
+However non-Object as parameter also has great advantage:
+
+1. you don't need to worry about name
+2. assigning default value is easier than object
+
+more on: https://stackoverflow.com/questions/12826977/multiple-arguments-vs-options-object
 
 ## Circular Referencing Solution
 
@@ -277,5 +295,11 @@ long story short, don't use `this` keyword in object,
 if we have to, use class
 
 ## It is better to import assests in JS then adding it in HTML
+
+1. Scripts and stylesheets get minified and bundled together to avoid extra network requests.
+2. Missing files cause compilation errors instead of 404 errors for your users.
+3. Result filenames include content hashes so you don’t need to worry about browsers caching their old versions.
+
+in short, going through webpack > without wbpack
 
 https://facebook.github.io/create-react-app/docs/using-the-public-folder
