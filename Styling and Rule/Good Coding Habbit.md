@@ -24,15 +24,33 @@ Sure we can use code editor search and replace utility but that is a dangerous t
 
 Object property is place where many thing can go wrong because of mistype, apply a constant to the accessor can prevent this type of problem.
 
+example:
+
+```
+cosnt NAME='name'
+
+const { [NAME]:username } = user
+
+console.log(username)
+```
+
+this practise has few crucial benefits:
+1. It prevent typo (no more out of no where undefined)
+2. If you mistype any variable (username or NAME), your linter will throw error, you wont able to compile.
+
+The only mistake is, you may use the wrong constant, but this is not fault of constant it is common error but still to see such error is rare.
+
 With constant we can also easily share it within back end and front end because object is heavily involved in api.
 
 ## Use Absolute Path
 
-so that we don't need to worry about the path when we copy the import statement to another file or when we move file.
+Our file path stay the same, we don't need to worry about the path when we copy the import statement to another file or when we move file.
+
+The only drawback is we cannot go higher than 
 
 ## Don't Include File Extension when Importing
 
-This allow us to freely change the file extension without breaking the import
+This allow us to freely change the file extension without breaking the import, for example changing from `js` to `jsx`
 
 ## Minimal Cases for "default"
 
@@ -64,13 +82,11 @@ if (status==='pass'){
 
 which is much safer, we still discard the retest unit but better than sending possible defect unit to customer.
 
-However we are talking about such mistake in general and how to close the possibility of such mistake.
+However imagine this kind of condition is all over the place and you forgot to change all of them.
 
-We should take care as much cases as possible, and the default case should alert the developer that there is a not taken care case.
+I think the ideal solution is to have a enum case where it forces us to fill all the case for every item or else throw compilation error 
 
-The less cases default take care of, the safer it is.
-
-I think the ideal solution is to have a enum case where it forces us to fill all the case for every item and throw compilation error if we do not do so, but currently js does not support "enum case" and even if there is "enum case" how we going to throw compilation error?
+but currently this seem impossible with JS.
 
 ## Create More Dotenv File Rather than Environment Cases
 
@@ -84,18 +100,17 @@ if (process.env.ENV === 'production'){
 }
 ```
 
-now imagine we have another new EVN value "pre-staging", what we need to do is change the code, this is not safe because we may forget to change all the related codes.
+now imagine we have another new EVN value "pre-staging", what we need to do is change the code, this is not safe because you most likely have these condition all over the place and you may forgot to change all the code.
 
-a recommended way to do so is, create different dotenv file for each and change our code to:
+a recommended way to do so is, create different dotenv file for each and change our code to rather than we use env var as condition, instead we use it as value:
 
 ```javascript
 port = process.env.PORT
 ```
 
-with this, our code is lesser and consistent across all the environment, we don't need to change code for every environment
-furthermore we can quickly identify whether the problem is come from code or environment variable when behavior is not the same for different environment.
+with this, not only we reduce the line of code plus, we also don't need to worry about forget to change code for every environment.
 
-For some case, we need extra trick like parsing, for example when we need an array for our environment variable.
+our code is now extremely consistent and caseless(less point of failure/bug), and the benefit of caseless code is, if something not right, we can quickly tell that most likely it is from environment variable but not the code. However if the code is not caseless, then we need also to check the cases, because cases it self is more prone to error.
 
 ## Keep the Parameter
 
