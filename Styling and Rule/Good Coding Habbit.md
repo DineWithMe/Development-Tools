@@ -42,6 +42,15 @@ The only mistake is, you may use the wrong constant, but this is not fault of co
 
 With constant we can also easily share it within back end and front end because object is heavily involved in api.
 
+# Don't Use the First Index to Check Wether The Array Empty Or Nor
+
+```
+arr = [undefine,1,2,3]
+arr[1] // undefined
+```
+
+this will give you false idea that the array is empty
+
 ## Use Absolute Path
 
 Our file path stay the same, we don't need to worry about the path when we copy the import statement to another file or when we move file.
