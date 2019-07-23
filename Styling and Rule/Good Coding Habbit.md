@@ -37,6 +37,7 @@ console.log(username)
 this practise has few crucial benefits:
 1. It prevent typo (no more out of no where undefined)
 2. If you mistype any variable (username or NAME), your linter will throw error, you wont able to compile.
+3. You can change the props name safely, unlike risky serach and replace.
 
 The only mistake is, you may use the wrong constant, but this is not fault of constant it is common error but still to see such error is rare.
 
