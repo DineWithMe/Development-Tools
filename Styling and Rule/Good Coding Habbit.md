@@ -328,3 +328,18 @@ if we have to, use class
 in short, going through webpack > without wbpack
 
 https://facebook.github.io/create-react-app/docs/using-the-public-folder
+
+## Circular Import
+https://stackoverflow.com/questions/38841469/how-to-fix-this-es6-module-circular-dependency/42704874#42704874
+
+This can be solve if we enforece uniflow import with atomic design.
+
+example:
+
+layer 1
+layer 2
+layer 3
+
+layer 3 can import from layer 2, layer 1 and generic layer
+layer 2 can import from layer 1 and generic layer
+layer 1 can only import from generic layer
