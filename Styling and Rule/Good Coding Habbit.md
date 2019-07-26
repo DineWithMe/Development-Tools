@@ -336,10 +336,10 @@ This can be solve if we enforece uniflow import with atomic design.
 
 example:
 
-layer 1
-layer 2
-layer 3
+layer 1  
+layer 2  
+layer 3  
 
-layer 3 can import from layer 2, layer 1 and generic layer
-layer 2 can import from layer 1 and generic layer
-layer 1 can only import from generic layer
+layer 3 can import from layer 2, layer 1 and generic layer  
+layer 2 can import from layer 1 and generic layer  
+layer 1 can only import from generic layer  
