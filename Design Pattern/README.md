@@ -1,10 +1,8 @@
-# Habit
-
-Habit is actually rules that not able to translate into linter yet.
+# DESIGN PATTERN
 
 ## Pure function
 
-If possible, make pure function, this make testing easier.
+If possible, make pure function, this make reusability easier.
 
 ## Modular Function
 
@@ -94,7 +92,7 @@ which is much safer, we still discard the retest unit but better than sending po
 
 However imagine this kind of condition is all over the place and you forgot to change all of them.
 
-I think the ideal solution is to have a enum case where it forces us to fill all the case for every item or else throw compilation error 
+I think the ideal solution is to have a enum case where it forces us to fill all the case for every item or else throw compilation error.
 
 but currently this seem impossible with JS.
 
@@ -120,7 +118,7 @@ port = process.env.PORT
 
 with this, not only we reduce the line of code plus, we also don't need to worry about forget to change code for every environment.
 
-our code is now extremely consistent and caseless(less point of failure/bug), and the benefit of caseless code is, if something not right, we can quickly tell that most likely it is from environment variable but not the code. However if the code is not caseless, then we need also to check the cases, because cases it self is more prone to error.
+our code is now extremely consistent and case-less(less point of failure/bug), and the benefit of caseless code is, if something not right, we can quickly tell that most likely it is from environment variable but not the code. However if the code is not case-less, then we need also to check the cases, because cases it self is more prone to error.
 
 ## Keep the Parameter
 
@@ -152,42 +150,65 @@ const func = (userData) = {
 
 the second approach is more flexible because it retain variable that represent the whole object, this is convenient when we want to console log the whole object or pass the whole object.
 
-## Object or Non-Object as Parameter
+## Object or Multiple Parameters
 
 Object here refer to **object literal**.
 
-Consider these two pieces of codes:
+consider these cases:
 
 ```javascript
-const floatingPoint = (denominator, numerator) => {
+const floatingPoint1 = (denominator=0, numerator=0) => {
   return numerator/denominator
 }
-floatingPoint(4,5)
-floatingPoint(5,4)
 ```
 
 ```javascript
-const floatingPoint = (fraction)=>{
+const floatingPoint2 = (fraction={denominator:0,numerator:0})=>{
   const { denominator, numerator } = fraction
   return numerator/denominator
 }
-floatingPoint({ denominator: 4, numerator: 5 })
-floatingPoint({ numerator: 5, denominator: 4 })
 ```
 
-In this case we want to look for floating point of 4/5, if we use the first code, we have higher chance of confusing our self when assigning values to arguments, object eliminate the need to remember the order of parameter.
+First is multiple parameters, second is object as parameter, and also notice how they are called:
 
-It also easier to skip some paramerters, we can only assign what we want easily.
+```javascript
+floatingPoint1(4,5)
+floatingPoint2({ denominator: 4, numerator: 5 })
+```
 
-The two drawback of object as parameter is:
+Which one is better? After some brainstorming:
 
-1. object is reference, we may accidentally change all the object.
-2. object name need to be correct.
+Benefits of object as parameter are:
 
-However non-Object as parameter also has great advantage:
+1. Changing order of parameter doesn't require you to change the code all over the places.
+2. Skipping parameter require less cognitive load, you don't need to count how many you skipped.
+3. Explicitly hint you what each parameter does with object key, better for readability.
 
-1. you don't need to worry about name
-2. assigning default value is easier than object
+Drawbacks of object as parameter are:
+
+1. Object is reference, we may accidentally change all the object if we don't shallow copy it.
+2. Object name need to be correct.
+3. Changing object name require all change to be made.
+4. Assigning default value is harder, for example if you assign `{a:1, b:2}` as default value and when you call it with `{a:1}`, `b` will not have any default value.
+
+Benefits of multiple parameter:
+
+1. Changing parameters name doesn't require you to change the code all over the places.
+2. Assigning default value is easier.
+
+Drawbacks of multiple parameter are:
+
+1. Changing order of parameters require you to change the code all over the places.
+2. Skipping parameter has higher cognitive load, you need to count how many you have skipped.
+3. Doesn't explicitly hint you what each parameter do, because there is no name when you call it.
+
+So which one is better? Practically speaking, multiple parameter is better for the reason we change parameter name more often than we change the parameter order.
+
+But for case that the parameter is dynamic, best example is `React.Component` class, where the number of parameter can be largely different when you call it and usually involve a lot of parameter, then obviously with multiple parameter cases, arranging parameter is something that is you do frequently because you want to prioritize the important parameter that is unlikely to be skipped and you probably change quite a lot, hence the cognitive load of ordering the parameter is very noticeable.
+
+In such case, then object is more practical, just like why human remember another human not with number but name and why we surfing web by typing website name but not IP address.
+
+Summary: 3-4 options, then multiple parameter, more than that, object.
 
 more on: https://stackoverflow.com/questions/12826977/multiple-arguments-vs-options-object
 
@@ -312,14 +333,13 @@ var a = {
 }
 ```
 
-The answer is the second one is better
-![thi and obj](img/thisandobj.png)
-because we wont shit ourself when we destructure it,
-in the first case, the `this` become window object after destructuring
-long story short, don't use `this` keyword in object,
-if we have to, use class
+<p align="center">
+  <img src='img/thisandobj.png'>
+</p>
 
-## It is better to import assests in JS then adding it in HTML
+The answer is the second one is better because we wont shit ourself when we destructure it, in the first case, the `this` become window object after destructuring long story short, don't use `this` keyword in object, if we have to, use class.
+
+## It is better to import assets in JS then adding it in HTML
 
 1. Scripts and stylesheets get minified and bundled together to avoid extra network requests.
 2. Missing files cause compilation errors instead of 404 errors for your users.
@@ -330,9 +350,10 @@ in short, going through webpack > without wbpack
 https://facebook.github.io/create-react-app/docs/using-the-public-folder
 
 ## Circular Import
+
 https://stackoverflow.com/questions/38841469/how-to-fix-this-es6-module-circular-dependency/42704874#42704874
 
-This can be solve if we enforece uniflow import with atomic design.
+This can be solve if we enforce uni-flow import with atomic design.
 
 example:
 
