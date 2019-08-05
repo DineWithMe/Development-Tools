@@ -488,3 +488,23 @@ this is better, this provide the option for developer to define their own onClic
 If initial value is not provided, accumulator will take the first element of array as default value and skip first round.  
   
 This could be an issue, for example we might want to do other thing in first round like fetching, that also will be skipped, so always include initial value.
+
+## Naming Component, Folder, File
+
+1.Name should be long because:
+
+- more meaningful (informative)
+- easier to replace all
+- long name has higher chance to be automatically unique and no collision, hence you wont mistaken it for another component
+  
+2.Name should be reversed:
+  
+What mean by this is, the set that file belong to should be in front of the name, for example SignUpForm should be named as FormSignUp, the first letter give you immediate clue of what item this is.
+
+the same rule also apply to folder and file naming and with extra benefit, this will automatically group similar file/folder together:
+
+FormResetPassword
+FormSignIn
+FormSIgnUp
+
+The common issue of long name is, the chance of typo is higher, but this is not an issue at all, webpack throw compilation error if it cannot find your component or folder, will throw error.
