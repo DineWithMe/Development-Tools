@@ -1,4 +1,4 @@
-# DESIGN PATTERN
+# Good Code
 
 This section is a mixture of JS and React.
 
@@ -48,7 +48,7 @@ We can also easily share it within back end and front end because object is heav
 
 However this practise could be very subjective as it make code harder to read, there is always trade off between safety and developer experience.
 
-# Don't Use the First Index to Check Wether The Array Empty Or Nor
+## Don't Use the First Index to Check Wether The Array Empty Or Nor
 
 ```js
 arr = [undefine,1,2,3]
@@ -63,15 +63,17 @@ this will give you false idea that the array is empty
 import {someTools} from '././././utils'
 ```
 
-this is relative pathing
+this is relative path
 
 ```js
-import {someTools} from 'utils' 
+import {someTools} from 'src/components/Button/ButtonLarge/utils' 
 ```
 
-this is absolute pathing and is better than relative pathing.
+this is absolute path and is better than relative path.
 
-First it is easier to read, second our import statement stay the same where ever we import it.
+First it is easier to read, require much less mental power to understand where the file is located.
+
+Second our import statement stay the same where ever we import it.
 
 The only drawback is we cannot go higher than the root absolute path.
 
@@ -99,7 +101,7 @@ consider this code:
 const status = 'pass'
 
 if (status === 'failed') {
-	discard()
+  discard()
 } else {
 	sendToCustomer()
 }
@@ -133,9 +135,9 @@ consider this code:
 
 ```javascript
 if (process.env.ENV === 'production') {
-	port = 3000
+  port = 3000
 } else if (process.env.ENV === 'development') {
-	port = 4000
+  port = 4000
 }
 ```
 
@@ -170,7 +172,7 @@ and
 
 ```javascript
 const func = (gamerData) = {
-  const { name, age, weight } = gamerData
+  const { name, age, weight } = {...gamerData}
   userStatus = {
     maturity: age > 18 ? 'adult' : 'not adult'
     ...userData
@@ -191,15 +193,15 @@ consider these cases:
 
 ```javascript
 const floatingPoint1 = (denominator = 0, numerator = 0) => {
-	return numerator / denominator
+  return numerator / denominator
 }
 ```
 
 ```javascript
 const floatingPoint2 = (fraction) => {
-	const defaultFraction = { denominator: 0, numerator: 0 }
-	const { denominator, numerator } = {...defaultFraction, ...fraction}
-	return numerator / denominator
+  const defaultFraction = { denominator: 0, numerator: 0 }
+  const { denominator, numerator } = {...defaultFraction, ...fraction}
+  return numerator / denominator
 }
 ```
 
@@ -245,6 +247,44 @@ In such case, then object is more practical, just like why human remember anothe
 Summary: 3-4 options, then multiple parameter, more than that, object.
 
 more on: https://stackoverflow.com/questions/12826977/multiple-arguments-vs-options-object
+
+## Alway Make a Shallow Copy of Object Parameter
+
+consider this:
+
+```js
+const num = { a:1 }
+
+const func = obj =>{
+  obj.a += 2
+  return obj
+}
+
+func(letter)
+```
+
+Obviously the original object value also changed, which is not good because this is a side effect. There is some few way to solve this:
+
+```js
+const func = { a } =>{
+  a = a + 2
+  return { a }
+}
+```
+
+However this method is not preferable for the reason mentioned in [Keep the Parameter Name](#keep-the-parameter-name)
+
+```js
+
+const func = obj =>{
+  const { a } = {...obj}
+  a += 2
+  return { a }
+}
+
+```
+
+With spread syntax we can easily make a shallow copy
 
 ## Circular Referencing Solution
 
