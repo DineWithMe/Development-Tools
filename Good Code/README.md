@@ -171,11 +171,11 @@ const func = ({name, age, weight}) = {
 and
 
 ```javascript
-const func = (gamerData) = {
-  const { name, age, weight } = {...gamerData}
+const func = (politicianData) = {
+  const { name, age, weight } = {...politicianData}
   userStatus = {
     maturity: age > 18 ? 'adult' : 'not adult'
-    ...userData
+    ...politicianData
   }
 }
 
@@ -183,7 +183,7 @@ const func = (gamerData) = {
 
 the second approach is more flexible because it retain variable that represent the whole object, this is convenient when we want to console log the whole object or pass the whole object.
 
-Another thing is the name itself porvide meaningful data, for example the first approach, we cannot know this data belong to what group of people, but with second apprach we know this data belong to a gamer.
+Another thing is the name itself porvide meaningful data, for example the first approach, we cannot know this data belong to what group of people, but with second apprach we know this data belong to a politician but not a gamer.
 
 ## Object or Multiple Parameters
 
