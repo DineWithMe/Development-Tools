@@ -45,9 +45,9 @@ this practise has few crucial benefits:
 2. If you mistype any variable (username or NAME), your linter will throw error, you wont able to compile.
 3. You can change the props name safely, unlike risky serach and replace.
 
-The only mistake is, you may use the wrong constant, but this is not fault of constant it is common error but still to see such error is rare.
+The only possiblr mistake is, you may use the wrong constant, but this is not the fault of constant, this is a common error, still to see such error is rare.
 
-With constant we can also easily share it within back end and front end because object is heavily involved in api.
+We can also easily share it within back end and front end because object is heavily involved in api.
 
 # Don't Use the First Index to Check Wether The Array Empty Or Nor
 
@@ -60,11 +60,35 @@ this will give you false idea that the array is empty
 
 ## Use Absolute Path
 
-Our file path stay the same, we don't need to worry about the path when we copy the import statement to another file or when we move file.
+```js
+import {someTools} from '././././utils'
+```
 
-The only drawback is we cannot go higher than
+this is relative pathing
+
+```js
+import {someTools} from 'utils' 
+```
+
+this is absolute pathing and is better than relative pathing.
+
+First it is easier to read, second our import statement stay the same where ever we import it.
+
+The only drawback is we cannot go higher than the root absolute path.
 
 ## Don't Include File Extension when Importing
+
+```js
+import {Button} from 'Components/Button.jsx' 
+```
+
+don't do this
+
+```js
+import {Button} from 'Components/Button' 
+```
+
+do this
 
 This allow us to freely change the file extension without breaking the import, for example changing from `js` to `jsx`
 
