@@ -409,3 +409,13 @@ const CustomButton = props => {
 ```
 
 this is better, this provide the option for developer to define their own onClick callback.
+
+## Always Provide Initial Value For Reduce
+
+<p align="center">
+  <img src='img/skipped.png'>
+</p>
+
+If initial value is not provided, accumulator will take the first element of array as default value and skip first round.  
+  
+This could be an issue, for example we might want to do other thing in first round like fetching, that also will be skipped, so always include initial value.
