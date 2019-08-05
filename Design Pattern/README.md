@@ -36,18 +36,17 @@ const { [NAME]:username } = user
 console.log(username)
 ```
 
-However this practise could be very subjective as it make code harder to read, there is always trade off between safety and developer experience.
-
-
 this practise has few crucial benefits:
 
 1. It prevent typo (no more out of no where undefined)
 2. If you mistype any variable (username or NAME), your linter will throw error, you wont able to compile.
 3. You can change the props name safely, unlike risky serach and replace.
 
-The only possiblr mistake is, you may use the wrong constant, but this is not the fault of constant, this is a common error, still to see such error is rare.
+The only possible mistake is, you may use the wrong constant, but this is not the fault of constant, this is a common error, still to see such error is rare.
 
 We can also easily share it within back end and front end because object is heavily involved in api.
+
+However this practise could be very subjective as it make code harder to read, there is always trade off between safety and developer experience.
 
 # Don't Use the First Index to Check Wether The Array Empty Or Nor
 
@@ -92,7 +91,7 @@ do this
 
 This allow us to freely change the file extension without breaking the import, for example changing from `js` to `jsx`
 
-## Minimal Cases for "default"
+## Minimal Cases for "default" (no solution)
 
 consider this code:
 
