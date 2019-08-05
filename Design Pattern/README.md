@@ -37,6 +37,7 @@ console.log(username)
 ```
 
 this practise has few crucial benefits:
+
 1. It prevent typo (no more out of no where undefined)
 2. If you mistype any variable (username or NAME), your linter will throw error, you wont able to compile.
 3. You can change the props name safely, unlike risky serach and replace.
@@ -58,7 +59,7 @@ this will give you false idea that the array is empty
 
 Our file path stay the same, we don't need to worry about the path when we copy the import statement to another file or when we move file.
 
-The only drawback is we cannot go higher than 
+The only drawback is we cannot go higher than
 
 ## Don't Include File Extension when Importing
 
@@ -71,10 +72,10 @@ consider this code:
 ```javascript
 const status = 'pass'
 
-if (status==='failed'){
-  discard()
+if (status === 'failed') {
+	discard()
 } else {
-  sendToCustomer()
+	sendToCustomer()
 }
 ```
 
@@ -85,10 +86,10 @@ Of course we can modify the code to something like this:
 ```javascript
 const status = 'pass'
 
-if (status==='pass'){
-  sendToCustomer()
+if (status === 'pass') {
+	sendToCustomer()
 } else {
-  discard()
+	discard()
 }
 ```
 
@@ -105,10 +106,10 @@ but currently this seem impossible with JS.
 consider this code:
 
 ```javascript
-if (process.env.ENV === 'production'){
-  port = 3000
-} else if (process.env.ENV === 'development'){
-  port = 4000
+if (process.env.ENV === 'production') {
+	port = 3000
+} else if (process.env.ENV === 'development') {
+	port = 4000
 }
 ```
 
@@ -161,22 +162,22 @@ Object here refer to **object literal**.
 consider these cases:
 
 ```javascript
-const floatingPoint1 = (denominator=0, numerator=0) => {
-  return numerator/denominator
+const floatingPoint1 = (denominator = 0, numerator = 0) => {
+	return numerator / denominator
 }
 ```
 
 ```javascript
-const floatingPoint2 = (fraction={denominator:0,numerator:0})=>{
-  const { denominator, numerator } = fraction
-  return numerator/denominator
+const floatingPoint2 = (fraction = { denominator: 0, numerator: 0 }) => {
+	const { denominator, numerator } = fraction
+	return numerator / denominator
 }
 ```
 
 First is multiple parameters, second is object as parameter, and also notice how they are called:
 
 ```javascript
-floatingPoint1(4,5)
+floatingPoint1(4, 5)
 floatingPoint2({ denominator: 4, numerator: 5 })
 ```
 
@@ -221,30 +222,28 @@ more on: https://stackoverflow.com/questions/12826977/multiple-arguments-vs-opti
 imagine such case:
 
 ```javascript
-const a  = {
-    val: 'a',
-    neighbor: d
+const a = {
+	val: 'a',
+	neighbor: d,
 }
 
 const b = {
-    val: 'b',
-    neighbor: a
+	val: 'b',
+	neighbor: a,
 }
 
-
 const c = {
-    val: 'c',
-    neighbor: b
+	val: 'c',
+	neighbor: b,
 }
 
 const d = {
-    val: 'd',
-    neighbor: c
+	val: 'd',
+	neighbor: c,
 }
 
-
-console.log( 'd: neighbor - > ' , d.neighbor )
-console.log( 'a: neighbor - > ' , a.neighbor )
+console.log('d: neighbor - > ', d.neighbor)
+console.log('a: neighbor - > ', a.neighbor)
 ```
 
 obviously the code wont work, as `d` is not yet defined when `a` try to access it.
@@ -252,30 +251,28 @@ obviously the code wont work, as `d` is not yet defined when `a` try to access i
 A quick solution for this is by using eval():
 
 ```javascript
-const a  = {
-    val: 'a',
-    neighbor: "d"
+const a = {
+	val: 'a',
+	neighbor: 'd',
 }
 
 const b = {
-    val: 'b',
-    neighbor: "a"
+	val: 'b',
+	neighbor: 'a',
 }
 
-
 const c = {
-    val: 'c',
-    neighbor: "b"
+	val: 'c',
+	neighbor: 'b',
 }
 
 const d = {
-    val: 'd',
-    neighbor: "c"
+	val: 'd',
+	neighbor: 'c',
 }
 
-
-console.log( 'd: neighbor - > ' , eval(d.neighbor) )
-console.log( 'a: neighbor - > ' , eval(a.neighbor) )
+console.log('d: neighbor - > ', eval(d.neighbor))
+console.log('a: neighbor - > ', eval(a.neighbor))
 ```
 
 However eval() is [evil](https://stackoverflow.com/questions/86513/why-is-using-the-javascript-eval-function-a-bad-idea)
@@ -284,28 +281,28 @@ So a better way is to change the code structure and use property accessor:
 
 ```javascript
 const neighborhood = {
-    a: {
-        val: 'a',
-        neighbor: 'd',
-    },
+	a: {
+		val: 'a',
+		neighbor: 'd',
+	},
 
-    b: {
-        val: 'b',
-        neighbor: 'a',
-    },
+	b: {
+		val: 'b',
+		neighbor: 'a',
+	},
 
-    c: {
-        val: 'c',
-        neighbor: 'b',
-    },
+	c: {
+		val: 'c',
+		neighbor: 'b',
+	},
 
-    d: {
-        val: 'd',
-        neighbor: 'c',
-    },
+	d: {
+		val: 'd',
+		neighbor: 'c',
+	},
 }
-console.log( 'd: neighbor - > ' , neighborhood[neighborhood.d.neighbor] )
-console.log( 'a: neighbor - > ' , neighborhood[neighborhood.a.neighbor] )
+console.log('d: neighbor - > ', neighborhood[neighborhood.d.neighbor])
+console.log('a: neighbor - > ', neighborhood[neighborhood.a.neighbor])
 ```
 
 this solution is more verbose but definitely safer than eval()
@@ -316,24 +313,24 @@ Consider these tow pieces of code, which is better?
 
 ```javascript
 var a = {
-    one() {
-        return 1
-    },
-    plusOne(num) {
-        return this.one() + num
-    },
+	one() {
+		return 1
+	},
+	plusOne(num) {
+		return this.one() + num
+	},
 }
 ```
 
 ```javascript
 function one() {
-    return 1
+	return 1
 }
 var a = {
-    one,
-    plusOne(num) {
-        return one() + num
-    },
+	one,
+	plusOne(num) {
+		return one() + num
+	},
 }
 ```
 
@@ -363,13 +360,17 @@ example:
 
 layer 1  
 layer 2  
-layer 3  
+layer 3
 
 layer 3 can import from layer 2, layer 1 and generic layer  
 layer 2 can import from layer 1 and generic layer  
-layer 1 can only import from generic layer  
+layer 1 can only import from generic layer
 
 ## Use Render Prop Over Higher Order Component
+
+<p align="center">
+  <img src='img/unknwon.png'>
+</p>
 
 Higher order component name is unknown.
 
@@ -378,29 +379,33 @@ also
 https://www.richardkotze.com/coding/hoc-vs-render-props-react
 
 ## Place restProps in beginning of Props
-```
+
+```js
 const CustomButton = props => {
-	return (
-		<button
-			{...otherProps}
+  return (
+    <button
+      {...otherProps}
       onClick={
         // do something
       }
-		/>
-	)
+    />
+  )
 }
 ```
+
 this is not good, this doesnt provide the option for user to define their own onClick callback.
-```
+
+```js
 const CustomButton = props => {
-	return (
-		<button
+  return (
+    <button
       onClick={
         // do something
       }
       {...otherProps}
-		/>
-	)
+    />
+  )
 }
 ```
+
 this is better, this provide the option for developer to define their own onClick callback.
