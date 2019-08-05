@@ -379,7 +379,7 @@ https://www.richardkotze.com/coding/hoc-vs-render-props-react
 
 ## Place restProps in beginning of Props
 ```
-const CustomeButton = props => {
+const CustomButton = props => {
 	return (
 		<button
 			{...otherProps}
@@ -392,7 +392,7 @@ const CustomeButton = props => {
 ```
 this is not good, this doesnt provide the option for user to define their own onClick callback.
 ```
-const CustomeButton = props => {
+const CustomButton = props => {
 	return (
 		<button
       onClick={
