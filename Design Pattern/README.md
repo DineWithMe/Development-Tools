@@ -28,13 +28,16 @@ Object property is place where many thing can go wrong because of mistype, apply
 
 example:
 
-```
+```js
 cosnt NAME='name'
 
 const { [NAME]:username } = user
 
 console.log(username)
 ```
+
+However this practise could be very subjective as it make code harder to read, there is always trade off between safety and developer experience.
+
 
 this practise has few crucial benefits:
 
@@ -48,7 +51,7 @@ With constant we can also easily share it within back end and front end because 
 
 # Don't Use the First Index to Check Wether The Array Empty Or Nor
 
-```
+```js
 arr = [undefine,1,2,3]
 arr[0] // undefined
 ```
