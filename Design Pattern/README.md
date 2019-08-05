@@ -373,5 +373,34 @@ layer 1 can only import from generic layer
 
 Higher order component name is unknown.
 
-https://dev.to/fargrim/react-devtools-and-unknown-components-3ni6
+https://dev.to/fargrim/react-devtools-and-unknown-components-3ni6  
+also  
 https://www.richardkotze.com/coding/hoc-vs-render-props-react
+
+## Place restProps in beginning of Props
+```
+const CustomeButton = props => {
+	return (
+		<button
+			{...otherProps}
+      onClick={
+        // do something
+      }
+		/>
+	)
+}
+```
+this is not good, this doesnt provide the option for user to define their own onClick callback.
+```
+const CustomeButton = props => {
+	return (
+		<button
+      onClick={
+        // do something
+      }
+      {...otherProps}
+		/>
+	)
+}
+```
+this is better, this provide the option for developer to define their own onClick callback.
