@@ -369,7 +369,7 @@ layer 1 can only import from generic layer
 ## Use Render Prop Over Higher Order Component
 
 <p align="center">
-  <img src='img/unknwon.png'>
+  <img src='img/unknown.png'>
 </p>
 
 Higher order component name is unknown.
