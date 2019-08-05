@@ -1,5 +1,7 @@
 # DESIGN PATTERN
 
+This section is a mixture of JS and React.
+
 ## Pure function
 
 If possible, make pure function, this make reusability easier.
@@ -11,6 +13,8 @@ Create modular function for any code that we use more than once to improve code 
 ## Export at Index File
 
 For every folder, create a index file that import all the exported functions in the folder and export with that index file. This is make importing much cleaner because we only import one file(index file) for every folder.
+
+Perhaps the best benefit of encapsulation is, we can minimize the impact of changing a file location or name. Without encapsulation, if we change a file name or move it to another sub-folder, we need to change all the import name/path all over the place. With encapsulation, this can be solved internally.
 
 ## Use Constant
 
@@ -364,3 +368,10 @@ layer 3
 layer 3 can import from layer 2, layer 1 and generic layer  
 layer 2 can import from layer 1 and generic layer  
 layer 1 can only import from generic layer  
+
+## Use Render Prop Over Higher Order Component
+
+Higher order component name is unknown.
+
+https://dev.to/fargrim/react-devtools-and-unknown-components-3ni6
+https://www.richardkotze.com/coding/hoc-vs-render-props-react
