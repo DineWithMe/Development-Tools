@@ -420,7 +420,7 @@ const CustomButton = props => {
 }
 ```
 
-this is not good, this doesnt provide the option for user to define their own onClick callback.
+this is not good, this doesnt provide the option for developer to define their own onClick callback.
 
 ```js
 const CustomButton = props => {
