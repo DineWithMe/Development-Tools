@@ -196,8 +196,9 @@ const floatingPoint1 = (denominator = 0, numerator = 0) => {
 ```
 
 ```javascript
-const floatingPoint2 = (fraction = { denominator: 0, numerator: 0 }) => {
-	const { denominator, numerator } = fraction
+const floatingPoint2 = (fraction) => {
+	const defaultFraction = { denominator: 0, numerator: 0 }
+	const { denominator, numerator } = {...defaultFraction, ...fraction}
 	return numerator / denominator
 }
 ```
