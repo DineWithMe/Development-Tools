@@ -50,7 +50,7 @@ With constant we can also easily share it within back end and front end because 
 
 ```
 arr = [undefine,1,2,3]
-arr[1] // undefined
+arr[0] // undefined
 ```
 
 this will give you false idea that the array is empty
