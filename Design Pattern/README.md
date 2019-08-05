@@ -151,17 +151,17 @@ with this, not only we reduce the line of code plus, we also don't need to worry
 
 our code is now extremely consistent and case-less(less point of failure/bug), and the benefit of caseless code is, if something not right, we can quickly tell that most likely it is from environment variable but not the code. However if the code is not case-less, then we need also to check the cases, because cases it self is more prone to error.
 
-## Keep the Parameter
+## Keep the Parameter Name
 
 consider these two piece of codes:
 
 ```javascript
-const func = ({name, age, occupation}) = {
+const func = ({name, age, weight}) = {
   userStatus = {
     maturity: age > 18 ? 'adult' : 'not adult'
     name,
     age,
-    occupation
+    weight
   }
 }
 ```
@@ -169,8 +169,8 @@ const func = ({name, age, occupation}) = {
 and
 
 ```javascript
-const func = (userData) = {
-  const { name, age, occupation } = userData
+const func = (gamerData) = {
+  const { name, age, weight } = gamerData
   userStatus = {
     maturity: age > 18 ? 'adult' : 'not adult'
     ...userData
@@ -180,6 +180,8 @@ const func = (userData) = {
 ```
 
 the second approach is more flexible because it retain variable that represent the whole object, this is convenient when we want to console log the whole object or pass the whole object.
+
+Another thing is the name itself porvide meaningful data, for example the first approach, we cannot know this data belong to what group of people, but with second apprach we know this data belong to a gamer.
 
 ## Object or Multiple Parameters
 
