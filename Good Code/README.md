@@ -193,6 +193,10 @@ the second approach is more flexible and easier because:
 2. the parameter name itself provide meaningful data, for example the first approach, we cannot know this data belong to what group of people, but with second approach we know this data belong to a politician but not a gamer.
 3. Easier to assign default value without introducing extra variable names.
 
+The drawback of keeping the parameter name is you may forget to make a shallow copy of it.
+to solve this, simply discipline yourself to alway include default value
+with default value, it encourage you to make shallow copy
+
 ## Object or Multiple Parameters
 
 Object here refer to **object literal**.
