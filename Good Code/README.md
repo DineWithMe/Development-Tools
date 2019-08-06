@@ -511,7 +511,7 @@ This could be an issue, for example we might want to do other thing in first rou
   
 2.Name should be reversed:
   
-What mean by this is, the set that file belong to should be in front of the name, for example SignUpForm should be named as FormSignUp, the first letter give you immediate clue of what item this is.
+What is meant by this is, the `set` that entity belong to should be in front of the name, for example SignUpForm should be named as FormSignUp, the first word give you good clue of what this item is.
 
 the same rule also apply to folder and file naming and with extra benefit, this will automatically group similar file/folder together:
 
