@@ -515,8 +515,8 @@ What is meant by this is, the `set` that entity belong to should be in front of 
 
 the same rule also apply to folder and file naming and with extra benefit, this will automatically group similar file/folder together:
 
-FormResetPassword
-FormSignIn
-FormSIgnUp
+FormResetPassword  
+FormSignIn  
+FormSIgnUp  
 
 The common issue of long name is, the chance of typo is higher, but this is not an issue at all, webpack throw compilation error if it cannot find your component or folder, will throw error.
