@@ -506,7 +506,7 @@ This could be an issue, for example we might want to do other thing in first rou
 1.Name should be long because:
 
 - more meaningful (informative)
-- easier to replace all
+- easier to search / replace
 - long name has higher chance to be automatically unique and no collision, hence you wont mistaken it for another component
   
 2.Name should be reversed:
