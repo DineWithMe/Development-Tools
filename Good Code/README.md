@@ -159,11 +159,15 @@ consider these two piece of codes:
 
 ```javascript
 const func = ({name, age, weight}) = {
+  const name_ = name || ''
+  const age_ = age || 0
+  const weight = weight || '0kg'
+  
   userStatus = {
     maturity: age > 18 ? 'adult' : 'not adult'
-    name,
-    age,
-    weight
+    name_,
+    age_,
+    weight_
   }
 }
 ```
@@ -172,7 +176,9 @@ and
 
 ```javascript
 const func = (politicianData) = {
-  const { name, age, weight } = {...politicianData}
+  const defaultPoliticianData = { name: '', age: 0, weight: '0kg' }
+  const { name, age, weight } = {...defaultPoliticianData,...politicianData}
+  
   userStatus = {
     maturity: age > 18 ? 'adult' : 'not adult'
     ...politicianData
@@ -181,9 +187,11 @@ const func = (politicianData) = {
 
 ```
 
-the second approach is more flexible because it retain variable that represent the whole object, this is convenient when we want to console log the whole object or pass the whole object.
+the second approach is more flexible because:
 
-Another thing is the name itself porvide meaningful data, for example the first approach, we cannot know this data belong to what group of people, but with second apprach we know this data belong to a politician but not a gamer.
+1. it retain variable that represent the whole object, this is convenient when we want to console log the whole object or pass the whole object.
+2. the name itself porvide meaningful data, for example the first approach, we cannot know this data belong to what group of people, but with second apprach we know this data belong to a politician but not a gamer.
+3. Easier to assign default value without introducing extra variable names.
 
 ## Object or Multiple Parameters
 
@@ -225,7 +233,7 @@ Drawbacks of object as parameter are:
 1. Object is reference, we may accidentally change all the object if we don't shallow copy it.
 2. Object name need to be correct.
 3. Changing object name require all change to be made.
-4. Assigning default value is harder, for example if you assign `{a:1, b:2}` as default value and when you call it with `{a:1}`, `b` will not have any default value.
+4. Assigning default value is more hassle.
 
 Benefits of multiple parameter:
 
