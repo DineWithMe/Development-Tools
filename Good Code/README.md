@@ -151,7 +151,7 @@ port = process.env.PORT
 
 with this, not only we reduce the line of code plus, we also don't need to worry about forget to change code for every environment.
 
-our code is now extremely consistent and case-less(less point of failure/bug), and the benefit of caseless code is, if something not right, we can quickly tell that most likely it is from environment variable but not the code. However if the code is not case-less, then we need also to check the cases, because cases it self is more prone to error.
+our code is now extremely consistent and case-less(no if-else, less point of failure/bug), and the benefit of this code is, if something not right, we can quickly tell that most likely it is from environment variable but not the code. However if the code is not case-less, then we need also to check the cases, because cases it self is a frequent point of failure.
 
 ## Keep the Parameter Name
 
