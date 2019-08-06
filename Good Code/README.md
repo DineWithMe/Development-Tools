@@ -187,10 +187,10 @@ const func = (politicianData) = {
 
 ```
 
-the second approach is more flexible because:
+the second approach is more flexible and easier because:
 
 1. it retain variable that represent the whole object, this is convenient when we want to console log the whole object or pass the whole object.
-2. the name itself porvide meaningful data, for example the first approach, we cannot know this data belong to what group of people, but with second apprach we know this data belong to a politician but not a gamer.
+2. the parameter name itself provide meaningful data, for example the first approach, we cannot know this data belong to what group of people, but with second approach we know this data belong to a politician but not a gamer.
 3. Easier to assign default value without introducing extra variable names.
 
 ## Object or Multiple Parameters
