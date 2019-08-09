@@ -14,7 +14,7 @@ Create modular function for any code that we use more than once to improve code 
 
 For every folder, create a index file that import all the exported functions in the folder and export with that index file. This is make importing much cleaner because we only import one file(index file) for every folder.
 
-Perhaps the best benefit of encapsulation is, we can minimize the impact of changing a file location or name. Without encapsulation, if we change a file name or move it to another sub-folder, we need to change all the import name/path all over the place. With encapsulation, this can be solved internally.
+Perhaps the best benefit of encapsulation is, we can minimize the impact of changing a file location or name. Without encapsulation, if we change a file name or move it to another sub-folder, we need to change all the import name/path all over the place. With encapsulation, this can be hanlded internally.
 
 ## Use Constant
 
@@ -93,7 +93,7 @@ do this
 
 This allow us to freely change the file extension without breaking the import, for example changing from `js` to `jsx`
 
-## Minimal Cases for "default" (no solution)
+## Minimal Cases for "default" 
 
 consider this code:
 
@@ -127,7 +127,7 @@ However imagine this kind of condition is all over the place and you forgot to c
 
 I think the ideal solution is to have a enum case where it forces us to fill all the case for every item or else throw compilation error.
 
-but currently this seem impossible with JS.
+but currently how this can be done in JS.
 
 ## Create More Dotenv File Rather than Environment Cases
 
