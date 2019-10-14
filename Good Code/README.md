@@ -77,6 +77,16 @@ Second our import statement stay the same where ever we import it.
 
 The only drawback is we cannot go higher than the root absolute path.
 
+**However there is one place that is absolutely good for relative path**
+
+That is if you are using index.js encapsulation
+
+because as an encapsulator, file that index.js import is always relative to index.js itself
+
+in short:
+index.js = relative import
+non index.js = absolute path
+
 ## Don't Include File Extension when Importing
 
 ```js
