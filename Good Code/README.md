@@ -459,7 +459,7 @@ https://dev.to/fargrim/react-devtools-and-unknown-components-3ni6
 also  
 https://www.richardkotze.com/coding/hoc-vs-render-props-react
 
-## Place restProps in The End of Props
+## Place restProps in The End of Props (JSX)
 
 ```js
 const CustomButton = props => {
