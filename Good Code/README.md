@@ -431,7 +431,7 @@ var a = {
 
 The answer is the second one is better because we wont shit ourself when we destructure it, in the first case, the `this` become window object after destructuring long story short, don't use `this` keyword in object, if we have to, use class.
 
-## It is better to import assets in JS then adding it in HTML
+## It is better to import scripts in JS then in HTML
 
 1. Scripts and stylesheets get minified and bundled together to avoid extra network requests.
 2. Missing files cause compilation errors instead of 404 errors for your users.
@@ -484,7 +484,7 @@ const CustomButton = props => {
 }
 ```
 
-this is not good, this doesnt provide the option for developer to define their own onClick callback.
+this is not good, this doesnt provide the option for developer to overwrite default onClick callback.
 
 ```js
 const CustomButton = props => {
