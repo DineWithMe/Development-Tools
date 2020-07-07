@@ -315,7 +315,7 @@ Summary: 3-4 options, then multiple parameter, more than that, object.
 
 more on: https://stackoverflow.com/questions/12826977/multiple-arguments-vs-options-object
 
-## Alway Make a Shallow Copy of Object Parameter
+## Dont Mutate State
 
 consider this:
 
@@ -327,7 +327,7 @@ const func = obj =>{
   return obj
 }
 
-func(letter)
+func(num)
 ```
 
 Obviously the original object value also changed, which is not good because this is a side effect. There is some few way to solve this:
@@ -351,7 +351,8 @@ const func = obj =>{
 
 ```
 
-With spread syntax we can easily make a shallow copy
+With spread syntax we can easily clone the object.
+In case you need deep clone, it is available in lodash npm.
 
 ## Circular Referencing Solution
 
@@ -441,7 +442,7 @@ console.log('d: neighbor - > ', neighborhood[neighborhood.d.neighbor])
 console.log('a: neighbor - > ', neighborhood[neighborhood.a.neighbor])
 ```
 
-this solution is more verbose but definitely safer than eval()
+this solution is more verbose but safer than eval()
 
 ## `this` in Object
 
