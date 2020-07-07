@@ -553,9 +553,9 @@ this is better, this provide the option for developer to define their own onClic
   <img src='img/skipped.png'>
 </p>
 
-If initial value is not provided, accumulator will take the first element of array as default value and skip first round.  
+If initial value is not provided, accumulator will take the first element of array as default value and skip first loop.  
   
-This could be an issue, for example we might want to do other thing in first round like fetching, that also will be skipped, so always include initial value.
+This could be an issue, for example we might want to do other calculation in first loop, that also will be skipped, so always include initial value.
 
 ## Naming Component, Folder, File
 
@@ -576,3 +576,29 @@ FormSignIn
 FormSIgnUp  
 
 The common issue of long name is, the chance of typo is higher, but this is not an issue at all, webpack throw compilation error if it cannot find your component or folder, will throw error.
+
+## Do Not Export Variable in Object
+
+bad:
+```js
+// obj.ts
+const a = 1
+const b = 2
+
+export const number = {a, b}
+```
+this does not enjoy tree shaking provided by bundler like webpack
+
+good:
+```js
+// notObj.ts
+export const a = 1
+export const b = 2
+```
+this enjoy tree shaking
+
+also we can export it like
+```js
+import * as number from 'notObj'
+```
+this has the best of both world
