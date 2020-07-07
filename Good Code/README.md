@@ -10,6 +10,14 @@ If possible, make pure function, this make reusability easier.
 
 Create modular function for any code that we use more than once to improve code cleanness and maintainability.
 
+## Use Captial Constant Variable for string constant
+
+dont leave repeated string value without variable, instead create a constant variable(capital letter) them.
+
+benefit:  
+-safer to search and replace variable name
+-consistency across code, we only need to change the value in variable
+
 ## Export at Index File
 
 For every folder, create a index file that import all the exported variable in that folder and export it in that index file.
@@ -71,15 +79,7 @@ with index file
 import { something } from 'abc'
 ```
 
-## Use Captial Constant Variable for string constant
-
-Create constant variable(capital letter) for any value that we use more than once.
-
-benefit:
--safer to search and replace variable name
--consistency across code, we only need to change the value in variable
-
-## Object Property Accessor Constant
+## Use property for Property(also accessor)
 
 Object property is place where many thing can go wrong because of mistype, apply a constant to the accessor can prevent this type of problem.
 
@@ -93,17 +93,13 @@ const { [NAME]:username } = user
 console.log(username)
 ```
 
-this practise has few crucial benefits:
+benefits:  
+1. prevent typo, bundler like webpack will warn you the variable is not found.*
+2. easier to replace the value, you dont need to replace it everywhere.**
 
-1. It prevent typo (no more out of no where undefined)
-2. If you mistype any variable (username or NAME), your linter will throw error, you wont able to compile.
-3. You can change the props name safely, unlike risky serach and replace.
+* This is not applicable if we use the wrong constant that exist, however this is logical error, not semantic error. To solve logical error, you need test.
 
-The only possible mistake is, you may use the wrong constant, but this is not the fault of constant, this is a common error, still to see such error is rare.
-
-We can also easily share it within back end and front end because object is heavily involved in api.
-
-However this practise could be very subjective as it make code harder to read, there is always trade off between safety and developer experience.
+** work great with typescript, constant + typescript make sure it is both correct and you dont need to replace it everywhere in case you change the member name.
 
 ## Don't Use the First Index to Check Wether The Array Empty Or Nor
 
@@ -112,53 +108,45 @@ arr = [undefine,1,2,3]
 arr[0] // undefined
 ```
 
-this will give you false idea that the array is empty
+it give us the false idea that the array is empty
 
 ## Use Absolute Path
 
 ```js
+// abc.js
 import {someTools} from '././././utils'
 ```
 
 this is relative path
 
 ```js
+//abc.js
 import {someTools} from 'src/components/Button/ButtonLarge/utils' 
 ```
 
-this is absolute path and is better than relative path.
-
-First it is easier to read, require much less mental power to understand where the file is located.
-
-Second our import statement stay the same where ever we import it.
+benefits:
+- less confusion and more reable.
+- easier to import.
+- you dont need to change the import if you move abc.js to somewhere else.
 
 The only drawback is we cannot go higher than the root absolute path.
 
-**However there is one place that is absolutely good for relative path**
-
-That is if you are using index.js encapsulation
-
-because as an encapsulator, file that index.js import is always relative to index.js itself
-
-in short:
-index.js = relative import
-non index.js = absolute path
+Personally I think 1 or 2 level relative path is still acceptable if the file is staple file in that folder.
 
 ## Don't Include File Extension when Importing
 
+Bad:  
 ```js
 import {Button} from 'Components/Button.jsx' 
 ```
 
-don't do this
-
+good:  
 ```js
 import {Button} from 'Components/Button' 
 ```
 
-do this
-
-This allow us to freely change the file extension without breaking the import, for example changing from `js` to `jsx`
+Benefits:
+- This allow us to freely change the file extension without breaking the import, for example changing from `js` to `jsx` since bundler like webpack ignore extension.
 
 ## Minimal Cases for "default" 
 
