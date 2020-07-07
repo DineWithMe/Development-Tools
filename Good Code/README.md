@@ -12,15 +12,72 @@ Create modular function for any code that we use more than once to improve code 
 
 ## Export at Index File
 
-For every folder, create a index file that import all the exported functions in the folder and export with that index file. This is make importing much cleaner because we only import one file(index file) for every folder.
+For every folder, create a index file that import all the exported variable in that folder and export it in that index file.
 
-Perhaps the best benefit of encapsulation is, we can minimize the impact of changing a file location or name. Without encapsulation, if we change a file name or move it to another sub-folder, we need to change all the import name/path all over the place. With encapsulation, this can be hanlded internally.
+Benefit:
+- encapsulation: you control how to expose your exports to other modules, the change in our export is less likely to affect the import path in other modules.
 
-## Use Constant
+without index file
+```js
+// abc/something.js
+export const something = ''
 
-Create constant for any value that we use more than once.
+//otherFile1.js, otherFile2.js, otherFile3.js...
+import { something } from 'abc/something'
 
-Sure we can use code editor search and replace utility but that is a dangerous thing to do, it is safer and more convenience to just create a constant.
+```
+
+if we change the name of variable something or the file name, we need to change it in all other files
+```js
+// abc/thing.js
+export const thing = ''
+
+//otherFile1.js, otherFile2.js, otherFile3.js...
+import { something } from 'abc/thing'
+```
+
+with index file
+```js
+// abc/something.js
+export const something = ''
+
+// abc/index.js
+import { something } from './something'
+
+//otherFile1.js, otherFile2.js, otherFile3.js...
+import { something } from 'abc'
+```
+if we change the name of variable something or the file name, we only need to apply the change in index file
+```js
+// abc/thing.js
+export const thng = ''
+
+// abc/index.js
+import { thing as something } from './thing' //only need to apply the change here
+
+//otherFile1.js, otherFile2.js, otherFile3.js...
+import { something } from 'abc'
+```
+
+- easier to import, you import only folder and variable name, not folder,file and variable name, less thing to keep in mind.
+
+without index file
+```js
+import { something } from 'abc/somethingFile'
+```
+
+with index file
+```js
+import { something } from 'abc'
+```
+
+## Use Captial Constant Variable for string constant
+
+Create constant variable(capital letter) for any value that we use more than once.
+
+benefit:
+-safer to search and replace variable name
+-consistency across code, we only need to change the value in variable
 
 ## Object Property Accessor Constant
 
